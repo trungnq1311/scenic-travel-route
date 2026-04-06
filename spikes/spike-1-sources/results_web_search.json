@@ -1,0 +1,793 @@
+{
+  "source": "web_search_tavily",
+  "timestamp": "2026-04-04T20:29:42.131695",
+  "total_queries": 10,
+  "queries_with_actionable_results": 10,
+  "total_results_found": 100,
+  "total_actionable_results": 74,
+  "total_commercial_results": 38,
+  "actionable_ratio": 0.74,
+  "pass": true,
+  "details": [
+    {
+      "query": "đường đẹp Sài Gòn đi Vũng Tàu",
+      "total_results": 10,
+      "actionable_results": 10,
+      "commercial_results": 4,
+      "details": [
+        {
+          "title": "4 cung đường phượt Sài Gòn Vũng Tàu phổ biến nhất - Vntrip.vn",
+          "url": "https://www.vntrip.vn/cam-nang/cac-cung-duong-phuot-sai-gon-vung-tau-61404",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Với tuyến đường này, từ Sài Gòn bạn đi theo đường Điện Biên Phủ và chạy qua cầu Sài Gòn vào Xa Lộ Hà Nội. Chạy thẳng đến hết cầu Đồng Nai sẽ gặp một bùng binh"
+        },
+        {
+          "title": "4 cung đường khám phá Bà Rịa Vũng Tàu Từ Sài Gòn",
+          "url": "https://diemden.baria-vungtau.gov.vn/about/4-cung-duong-kham-pha-ba-ria-vung-tau-tu-sai-gon",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Nếu đang ở trung tâm Sài Gòn, bạn hãy tìm đến đường Điện Biên Phủ, sau đó chạy qua cầu Sài Gòn đến Xa Lộ Hà Nội. Tiếp tục chạy thẳng đến hết cầu Đồng Nai, bạn"
+        },
+        {
+          "title": "Vé xe Sài Gòn Vũng Tàu giá rẻ từ 190.000 đ - Traveloka",
+          "url": "https://www.traveloka.com/vi-vn/bus-and-shuttle/route/ve-xe-ho-chi-minh-city.vung-tau-city",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "## Giới thiệu về tuyến đường Sài Gòn - Vũng Tàu\n\nHiện nay tuyến đường xe Sài Gòn đi Vũng Tàu đang có chiều dài khoảng 115km, thời gian di chuyển cho xe từ Sài Gòn đi Vũng Tàu sẽ rơi vào tầm 2.4 giờ nế"
+        },
+        {
+          "title": "Đặt vé xe từ Sài Gòn đi Vũng Tàu - Vexere.com",
+          "url": "https://vexere.com/vi-VN/ve-xe-khach-tu-sai-gon-di-vung-tau-ba-ria-vung-tau-129t2131.html",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Xe Sài Gòn Vũng Tàu - Bà Rịa-Vũng Tàu giường nằm tốt nhất: Xe từ Sài Gòn đi Vũng Tàu - Bà Rịa-Vũng Tàu giường nằm được đánh giá chung chất lượng Tốt với điểm đánh giá trung bình từ\n4.1/5 dựa trên 1466"
+        },
+        {
+          "title": "Kinh nghiệm phượt Sài Gòn-Vũng Tàu tự túc bằng xe máy A-Z",
+          "url": "https://justfly.vn/discovery/vietnam/vung-tau/phuot-vung-tau-bang-xe-may",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "## 2. Gợi ý đường đi phượt Vũng Tàu bằng xe máy\n\nĐể đi phượt đến Vũng Tàu bằng xe máy sẽ có nhiều tuyến đường đi khác nhau để bạn có thể lựa chọn. Vũng Tàu cách thành phố Hồ Chí Minh khoảng 120km. Nếu"
+        },
+        {
+          "title": "Danh sách xe Sài Gòn đi Vũng Tàu: Giá vé, lịch trình chi tiết 2025",
+          "url": "https://www.xanhsm.com/news/xe-sai-gon-di-vung-tau",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Nhà xe Hoa Mai phục vụ tuyến xe từ Sài Gòn đi Vũng Tàu​ với tần suất 30 phút/chuyến. Thời gian di chuyển trung bình của xe khoảng 2 giờ, đảm bảo chuyến đi nhanh chóng, thuận tiện. [...] Tuyến xe Sài G"
+        },
+        {
+          "title": "Những con đường đẹp nhất ở Sài Gòn - TikTok",
+          "url": "https://www.tiktok.com/@saigoncityview/video/7405067456328256769",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "sài gòn tôi thích nhất đi dạo ở các đường lê quý đôn, phùng khắc khoan... ngay cả giờ cao điểm vẫn êm vắng. 2024"
+        },
+        {
+          "title": "4 cách từ TPHCM đi Vũng Tàu bạn đã biết? - PYS Travel",
+          "url": "https://pystravel.vn/tin/6351-tphcm-di-vung-tau.html?srsltid=AfmBOoqxt6JBhpG2TyS63TO-PBdd5tEOaV8BozsPAv-07B_nEgaCXbjg",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "PYS Travel\n\n# 4 cách từ TPHCM đi Vũng Tàu bạn đã biết?\n\n4 cách từ TPHCM đi Vũng Tàu bạn đã biết?\n\nNếu có dự định về với thành phố biển trong một dịp cuối tuần đẹp trời nhưng bạn vẫn còn đang phân vân "
+        },
+        {
+          "title": "Cung đường đẹp nhất Sài Gòn | Khoảng lặng giữa lòng thành phố",
+          "url": "https://www.youtube.com/watch?v=7Fv1uVL0vA8",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Cung đường đẹp nhất Sài Gòn | Khoảng lặng giữa lòng thành phố Kênh chia sẻ góc nhìn trên cao về các công trình, hạ tầng giao thông và"
+        },
+        {
+          "title": "Thảo Luận Chung Những cung đường Sài Gòn thú vị nhất - Otosaigon",
+          "url": "https://www.otosaigon.com/threads/nhung-cung-duong-sai-gon-thu-vi-nhat.4028365/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Otosaigon - diễn đàn, cộng đồng ô tô số 1 Việt Nam\nOtosaigon - diễn đàn, cộng đồng ô tô số 1 Việt Nam\nOtosaigon - diễn đàn, cộng đồng ô tô số 1 Việt Nam\nOtosaigon - diễn đàn, cộng đồng ô tô số 1 Việt "
+        }
+      ]
+    },
+    {
+      "query": "cung đường phượt Sài Gòn Vũng Tàu",
+      "total_results": 10,
+      "actionable_results": 8,
+      "commercial_results": 1,
+      "details": [
+        {
+          "title": "Những tuyến đường từ Sài Gòn đi Vũng Tàu dành cho dân phượt",
+          "url": "https://sigo.vn/news/nhung-tuyen-duong-tu-sai-gon-di-vung-tau-danh-cho-dan-phuot",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "## Cung đường Long Sơn – Vũng Tàu\n\nTương tự như cung đường Sài Gòn – Quốc lộ 1A – Quốc lộ 51 – Vũng Tàu, nhưng chỉ cần thay đổi lộ trình đôi chút, bạn sẽ có cơ hội chiêm ngưỡng nhiều khung cảnh thiên "
+        },
+        {
+          "title": "4 cung đường khám phá Bà Rịa Vũng Tàu Từ Sài Gòn",
+          "url": "https://diemden.baria-vungtau.gov.vn/about/4-cung-duong-kham-pha-ba-ria-vung-tau-tu-sai-gon",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Cung đường phượt Vũng Tàu từ Sài Gòn qua phà Cát Lái. Hướng dẫn đường đi. Từ Sài Gòn, bạn đi vào đại lộ Võ Văn Kiệt, qua hầm Thủ Thiêm và chạy thẳng theo"
+        },
+        {
+          "title": "4 cung đường phượt Sài Gòn Vũng Tàu phổ biến nhất - Vntrip.vn",
+          "url": "https://www.vntrip.vn/cam-nang/cac-cung-duong-phuot-sai-gon-vung-tau-61404",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "#### Cung đường này có gì hấp dẫn?\n\nTheo cách miêu tả cũng thấy cung đường phượt Sài Gòn Vũng Tàu này khá vòng vèo và có nhiều ngã rẽ. Tuy nhiên, khung cảnh bên dọc đường bình dị và xanh tươi. Ngoài r"
+        },
+        {
+          "title": "Các cách đi từ Sài gòn đến Vũng Tàu nhanh và gần - Digishop",
+          "url": "https://digishop.vnpt.vn/tin-tuc-km/doi-song/duong-di-vung-tau-cac-cach-di-tu-sai-gon-den-vung-tau-nhanh-va-gan",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Bạn vẫn đi theo Quốc lộ 1A, qua khỏi cầu Đồng Nai, theo quốc lộ 51 đến cách Vũng Tàu 27 km sẽ có biển chỉ dẫn đi Long Sơn. Đây là đường đi tắt"
+        },
+        {
+          "title": "A GUIDE TO GETTING FROM SAIGON TO VUNG TAU! THE ROUTE ...",
+          "url": "https://www.youtube.com/watch?v=IUmHFMfQ4n4",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Xin chào cả nhà! Hôm nay TXB xin chia sẽ đến với cả nhà một cung đường đi Vung Tàu mà ít ai đi, đường này xa hơn so với QL51 mà cả nhà hay"
+        },
+        {
+          "title": "QUÁ ĐÃ ! Trải Nghiệm ĐƯỜNG MỚI SÀI GÒN đi VŨNG TÀU ...",
+          "url": "https://www.youtube.com/watch?v=EQqH1YHz9y0",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Thường thì Sài Gòn đi Vũng Tàu là nổi ám ảnh là kẹt xe đẫn tới thời gian lâu hơn nhưng hôm nay Sunny Doan chia sẻ cùng anh chị trải nghiệm"
+        },
+        {
+          "title": "Cung đường đi Vũng Tàu từ Hồ Chí Minh gần hơn bao giờ hết",
+          "url": "https://www.ivivu.com/blog/2022/07/cung-duong-di-vung-tau-tu-ho-chi-minh-gan-hon-bao-gio-het/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Thông thường quãng đường đi từ Hồ Chí Minh sẽ mất khoảng 3 tiếng đến 3 tiếng rưỡi theo đường quốc lộ 51 hoặc đường cao tốc Long Thành Dầu Giây."
+        },
+        {
+          "title": "4 cách từ TPHCM đi Vũng Tàu bạn đã biết? - PYS Travel",
+          "url": "https://pystravel.vn/tin/6351-tphcm-di-vung-tau.html?srsltid=AfmBOoqxBasjDiHmVJW_jYW-LVNYs0_jNvZYRlNuUI-_fOpuq_pw7BCk",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Cung đường 1: Bạn chỉ việc di chuyển theo Quốc lộ 1, qua khỏi cầu Đồng Nai sẽ nhìn thấy một bùng binh gọi là Ngã ba Vũng Tàu. Kế đó bạn rẽ phải theo Quốc lộ 51 và tiếp tục đi thẳng khoảng tầm thêm 100"
+        },
+        {
+          "title": "Em dự tính đi chơi từ SG tới Vũng Tàu bằng xe máy. Anh chị cho em ...",
+          "url": "https://www.facebook.com/groups/cungduongphuotbui/posts/2467370343628101/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Em newbie, xin các anh chị ít kinh nghiệm - Em dự tính đi chơi từ SG tới Vũng Tàu bằng xe máy. Anh chị cho em tham khảo map, hoặc các tuyến"
+        },
+        {
+          "title": "Trải nghiệm CON ĐƯỜNG MỚI đi VŨNG TÀU NHANH NHẤT và ...",
+          "url": "https://www.youtube.com/watch?v=LDKdihAwtt8",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Ngày hôm nay kẹt xe là nổi ám ảnh của mọi người dân, đi Vũng Tàu thật vất vả và căng thẳng kẹt xe và Sunny Doan cùng cùng chia sẻ và trải"
+        }
+      ]
+    },
+    {
+      "query": "đường ven biển Sài Gòn Vũng Tàu đẹp",
+      "total_results": 10,
+      "actionable_results": 10,
+      "commercial_results": 3,
+      "details": [
+        {
+          "title": "Trải nghiệm lý thú với 4 cung đường phượt Vũng Tàu từ Sài Gòn cực đẹp",
+          "url": "https://mia.vn/cam-nang-du-lich/trai-nghiem-ly-thu-voi-4-cung-duong-phuot-vung-tau-tu-sai-gon-cuc-dep-1561",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Sau đó bạn đi tiếp Đường ven biển sẽ đến được TP. Vũng Tàu. Cung đường phượt Vũng Tàu từ Sài Gòn này khá vòng vèo và có nhiều ngã rẽ nhưng bạn sẽ bất ngờ bởi khung cảnh bên dọc đường bình dị và xanh t"
+        },
+        {
+          "title": "Những tuyến đường từ Sài Gòn đi Vũng Tàu dành cho ...",
+          "url": "https://sigo.vn/news/nhung-tuyen-duong-tu-sai-gon-di-vung-tau-danh-cho-dan-phuot",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Trên đường đi, đừng quên dừng chân ghé vào các làng chài ven biển để thưởng thức hải sản tươi sống hoặc bánh căn nóng hổi – những món đặc sản đậm chất miền biển. Không chỉ ở trung tâm thành phố mới có"
+        },
+        {
+          "title": "4 cung đường phượt Sài Gòn Vũng Tàu phổ biến nhất - Vntrip.vn",
+          "url": "https://www.vntrip.vn/cam-nang/cac-cung-duong-phuot-sai-gon-vung-tau-61404",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "#### Cung đường này có gì hấp dẫn?\n\nTheo cách miêu tả cũng thấy cung đường phượt Sài Gòn Vũng Tàu này khá vòng vèo và có nhiều ngã rẽ. Tuy nhiên, khung cảnh bên dọc đường bình dị và xanh tươi. Ngoài r"
+        },
+        {
+          "title": "4 cung đường khám phá Bà Rịa Vũng Tàu Từ Sài Gòn",
+          "url": "https://diemden.baria-vungtau.gov.vn/about/4-cung-duong-kham-pha-ba-ria-vung-tau-tu-sai-gon",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "#### \n\n#### Cung đường này có gì hấp dẫn?\n\nCung đường phượt Vũng Tàu từ Sài Gòn này khá vòng vèo và có nhiều ngã rẽ nhưng bạn sẽ bất ngờ bởi khung cảnh bên dọc đường bình dị và xanh tươi. Đặc biệt, bạ"
+        },
+        {
+          "title": "Kinh nghiệm phượt 5 cung đường ven biển Vũng Tàu thơ mộng",
+          "url": "https://www.vntrip.vn/cam-nang/phuot-cuoi-tuan-den-nhung-con-duong-dep-nam-ven-bien-vung-tau-545",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "| bãi tắm tuyệt đẹp nằm trên con đường Thùy Vân |\n\n| Bãi tắm tuyệt đẹp nằm trên con đường Thùy Vân (Ảnh sưu tầm) |\n\nbãi tắm tuyệt đẹp nằm trên con đường Thùy Vân\n\nĐường Thùy Vân với chiều dài 8km có r"
+        },
+        {
+          "title": "Điểm Danh Những Cung Đường Biển Đẹp Và Địa Điểm Hút Hồn Tại Vũng Tàu - MOTOGO",
+          "url": "https://motogo.vn/cung-duong-bien-dep-va-dia-diem-hut-hon-tai-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "January 13, 2026 - Cảnh đẹp trên đường đi: Cung đường này được mệnh danh là “cung đường đẹp nhất Vũng Tàu” với khung cảnh biển trời thơ mộng, lãng mạn. Bạn sẽ được ngắm nhìn những bãi tắm đẹp nhất Vũn"
+        },
+        {
+          "title": "Những điều cần biết khi đi du lịch phượt Mũi Né sau Tết",
+          "url": "https://www.vietfuntravel.com.vn/blog/nhung-dieu-can-biet-khi-di-du-lich-phuot-mui-ne-sau-tet.html",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Cung đường phượt thứ 2 là cung đường ven biển Sài Gòn – Vũng Tàu – Lagi dài 260km. Đi trên cung đường này, du khách sẽ được ngắm nhìn vẻ đẹp của"
+        },
+        {
+          "title": "Tinhte on the Road là một series mới của Tinh tế, hướng đến những ...",
+          "url": "https://www.facebook.com/tinhte/posts/tinhte-on-the-road-l%C3%A0-m%E1%BB%99t-series-m%E1%BB%9Bi-c%E1%BB%A7a-tinh-t%E1%BA%BF-h%C6%B0%E1%BB%9Bng-%C4%91%E1%BA%BFn-nh%E1%BB%AFng-chuy%E1%BA%BFn-%C4%91i-v%E1%BB%ABa-c/5516614721694863/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "... đẹp. Anh em cùng thưởng thức! #tinhte #tinhteontheroad #ontheroad ... Mở đầu hành trình là cung đường ven biển Sài Gòn - Vũng Tàu ... Chuyến đi này bọn mình đi bằng"
+        },
+        {
+          "title": "Đường ven biển đẹp nhất Vũng Tàu||Quảng trường Tam Thắng nơi ...",
+          "url": "https://www.youtube.com/watch?v=YjrQcw6vqU8",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "vungtau #vungtaucity #vũngtàu #vungtaubeach #vungtaungaynay #vungtau2025 #baitruoc #baisau #baithuyvan #thuyvan #quangtruong"
+        },
+        {
+          "title": "Hình hài tuyến đường ven biển nối Vũng Tàu - Bình Thuận sau 2 năm thi công | Báo Dân trí",
+          "url": "https://dantri.com.vn/thoi-su/hinh-hai-tuyen-duong-ven-bien-noi-vung-tau-binh-thuan-sau-2-nam-thi-cong-20250523222357586.htm",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Tuyến mở rộng chủ yếu trùng với tim đường hiện hữu, đi qua địa phận xã Bình Chu (huyện Xuyên Mộc), xã Lộc An, thị trấn Đất Đỏ, thị trấn Long Hải (huyện Long Đất), xã Long Sơn (TP Vũng Tàu) và kết nối "
+        }
+      ]
+    },
+    {
+      "query": "con đường scenic đi Vũng Tàu",
+      "total_results": 10,
+      "actionable_results": 8,
+      "commercial_results": 4,
+      "details": [
+        {
+          "title": "Vung Tau – The Most Beautiful Coastal Road in the South | Travel Vung ...",
+          "url": "https://www.youtube.com/watch?v=WYAAml_8FUo",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "... đường ven biển Vũng Tàu – một trong những cung đường đẹp nhất Việt Nam Cảm ơn các Bạn đã xem video, đừng quên nhấn đăng ký kênh để tạo động"
+        },
+        {
+          "title": "4 cung đường khám phá Bà Rịa Vũng Tàu Từ Sài Gòn",
+          "url": "https://diemden.baria-vungtau.gov.vn/about/4-cung-duong-kham-pha-ba-ria-vung-tau-tu-sai-gon",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "So với cung đường thứ nhất, phượt Vũng Tàu qua phà Cát Lái ngắn hơn 20km. Hơn nữa, trên cung đường này còn có rất nhiều cảnh đẹp cho bạn chiêm ngưỡng như rừng cao su bạt ngàn, khu vòng xoay Mỹ Thủy ha"
+        },
+        {
+          "title": "Top 22 địa điểm tham quan Vũng Tàu dành cho bạn - Traveloka",
+          "url": "https://www.traveloka.com/vi-vn/explore/destination/bat-mi-10-dia-diem-tham-quan-vung-tau-cho-ban-vui-choi-quen-loi-ve/109046",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "# 10. Hẻm 444 Trần Phú\n\nNhững ai mê mẩn khung cảnh tràn ngập lá vàng rơi trong những bộ phim Hàn Quốc đều sẽ thích địa điểm này. Con đường để vào được đến đây cần một chút gian nan, thử thách. Tuy vậy"
+        },
+        {
+          "title": "Top 24 địa điểm du lịch Vũng Tàu cực hot để khám phá - MoMo",
+          "url": "https://www.momo.vn/blog/dia-diem-du-lich-vung-tau-c101dt867",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Trên núi Nhỏ còn có một địa điểm du lịch Vũng Tàu nổi tiếng không kém, đó là ngọn hải đăng Vũng Tàu. Cũng như hầu hết các ngọn hải đăng khác, công trình này được sơn màu trắng, cao 18m.\n\nHải đăng Vũng"
+        },
+        {
+          "title": "Kinh Nghiệm Phượt Du Lịch Vũng Tàu Bằng Xe Máy",
+          "url": "https://miahotelvungtau.com/kinh-nghiem-phuot-du-lich-vung-tau-bang-xe-may/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Ưu điểm: Cung đường này ngắn hơn cung truyền thống, bạn sẽ tiết kiệm được gần 20km. Trên đoạn Tôn Đức Thắng bạn sẽ có dịp đi ngang qua rừng cao su bạt ngàn, chỗ này cũng có rất nhiều quán cà phê võng "
+        },
+        {
+          "title": "Khám phá 15 địa điểm du lịch Vũng Tàu hấp dẫn cho hội mê xê dịch",
+          "url": "https://www.xanhsm.com/news/dia-diem-du-lich-vung-tau",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Địa chỉ: Đường Vi Ba, thành phố Vũng Tàu, tỉnh Bà Rịa – Vũng Tàu.\n Giá vé vào: Miễn phí vé vào (Mức giá được cung cấp chỉ để tham khảo và có thể điều chỉnh theo thời điểm).\n\nNúi lớn Vũng Tàu được mệnh"
+        },
+        {
+          "title": "“As dusk settles, Vung Tau puts on its shimmering coat of lights, dazzling ...",
+          "url": "https://www.instagram.com/p/DWSqOmqjz7v/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "⛅ Tọa lạc trên cung đường Thùy Vân sôi động, Vias Vũng Tàu nổi bật với phong cách đương đại và view biển ấn tượng. Phòng được trang bị nhiều"
+        },
+        {
+          "title": "Top 10 địa điểm Du Lịch Hè Vũng Tàu 2025",
+          "url": "https://homaypark.com/top-10-dia-diem-du-lich-he-vung-tau-2025/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Để có thể lên được chỗ bức tượng, du khách cần phải chuẩn bị sức khỏe để vượt qua 1000 bậc thang. Dù khá mệt và tốn thời gian nhưng bạn sẽ được ngắm nhìn khung cảnh thành phố tuyệt đẹp, những bãi biển"
+        },
+        {
+          "title": "Top 20 địa điểm du lịch Vũng Tàu đẹp \"quên lối về\" - muongthanh",
+          "url": "https://booking.muongthanh.com/tin-tuc/dia-diem-du-lich-vung-tau-dep-nhat",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Địa chỉ: 98 Trần Hưng Đạo, P. 1, TP. Vũng Tàu (Bấm vào để xem map)\n Hoạt động nổi bật: Khám phá bộ sưu tập vũ khí cổ, tìm hiểu lịch sử.\n\n### Thiên nhiên hoang sơ & độc đáo\n\nNgoài biển, Vũng Tàu còn có"
+        },
+        {
+          "title": "21 Địa Điểm Du Lịch Vũng Tàu Nổi Tiếng Mạng Xã Hội - Klook Blog",
+          "url": "https://www.klook.com/vi/blog/dia-diem-du-lich-vung-tau/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "21 Địa Điểm Du Lịch Vũng Tàu Nổi Tiếng Mạng Xã Hội · 1. Suối Nước Nóng Minera Hot Springs Bình Châu · 2. Bến Du Thuyền Marina Vũng Tàu · 3. Làng Bè Long Sơn -"
+        }
+      ]
+    },
+    {
+      "query": "đường đi Vũng Tàu qua Long Hải",
+      "total_results": 10,
+      "actionable_results": 9,
+      "commercial_results": 3,
+      "details": [
+        {
+          "title": "Thảo Luận Chung Từ Long Hải qua Vũng Tàu đường nào ngắn nhất?",
+          "url": "https://www.otosaigon.com/threads/tu-long-hai-qua-vung-tau-duong-nao-ngan-nhat.4428565/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Đi thế này nè bác : Long Hải đi theo Hương Lộ 5 -> Vòng xoay ( gần chợ Long Hải nằm về phía Bà Rịa so với chợ) -> đường ven biển -> Cầu Cửa Lấp"
+        },
+        {
+          "title": "So beautiful! The road from Vung Tau through Long Hai ... - YouTube",
+          "url": "https://www.youtube.com/watch?v=qP-_Bpstj9c",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Thời gian thoi đưa, vài năm trở lại đây con đường từ Tp Vũng Tàu đi qua thị trấn Long Hải rồi đến thị trấn Phước Hải ngày càng rộng rãi,"
+        },
+        {
+          "title": "Kinh nghiệm du lịch Long Hải tự túc chi tiết nhất 2026 - Traveloka",
+          "url": "https://www.traveloka.com/vi-vn/explore/tips/kinh-nghiem-du-lich-long-hai/168215",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Kinh nghiệm du lịch Long Hải\n\nBỏ túi những kinh nghiệm du lịch Long Hải để hiểu hơn về người bạn cuối tuần mới này@VTEAMBUILDING\n\n# 1. Kinh nghiệm du lịch Long Hải cần bỏ túi\n\n# 1.1. Đôi nét về biển L"
+        },
+        {
+          "title": "Khám phá cung đường Vũng Tàu đi Long Hải - YouTube",
+          "url": "https://www.youtube.com/watch?v=pboLvdl63o0",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Khám phá cung đường Vũng Tàu đi Long Hải. 96 views · 6 months ago ...more. Vo Chong Sua Xe. 12.8K. Subscribe."
+        },
+        {
+          "title": "Đặt vé xe từ Bà Rịa-Vũng Tàu đi Long Hải - Vexere.com",
+          "url": "https://vexere.com/vi-VN/ve-xe-khach-tu-ba-ria-vung-tau-di-long-hai-ba-ria-vung-tau-12t21142661.html",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Đặt vé TOP 0 nhà xe đi Long Hải - Bà Rịa-Vũng Tàu từ Bà Rịa-Vũng Tàu VIP chất lượng cao giá vé rẻ nhất. Không cần thanh toán trước, chọn được chỗ ngồi yêu"
+        },
+        {
+          "title": "Các cách đi từ Sài gòn đến Vũng Tàu nhanh và gần - DigiShop VNPT",
+          "url": "https://digishop.vnpt.vn/tin-tuc-km/doi-song/duong-di-vung-tau-cac-cach-di-tu-sai-gon-den-vung-tau-nhanh-va-gan",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Bạn vẫn đi theo Quốc lộ 1A, qua khỏi cầu Đồng Nai, theo quốc lộ 51 đến cách Vũng Tàu 27 km sẽ có biển chỉ dẫn đi Long Sơn. Đây là đường đi tắt"
+        },
+        {
+          "title": "4 cung đường khám phá Bà Rịa Vũng Tàu Từ Sài Gòn",
+          "url": "https://diemden.baria-vungtau.gov.vn/about/4-cung-duong-kham-pha-ba-ria-vung-tau-tu-sai-gon",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Bạn đi theo Xa Lộ Hà Nội để đến ngã tư Vũng Tàu (trước là ngã Ba), rẽ phải để vào QL 51, hoặc đi theo hướng hầm Thủ Thiêm để qua phà Cát Lái, KCN Nhơn Trạch rồi"
+        },
+        {
+          "title": "Bản đồ đường đi Vũng Tàu qua phà Cát Lái 2024 - Houze Blog",
+          "url": "https://blog.houze.vn/blog/ban-do-duong-di-vung-tau-qua-pha-cat-lai-2022",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Chặng 2 tuyến đường đi Vũng Tàu qua phà Cát Lái:\n\n Ngay khi vừa xuống phà là đường Lý Thái Tổ thuộc huyện Nhơn Trạch\n Chạy thêm 5km là ngã 3, rẽ phải để di chuyển vào đường Trần Văn Trà\n Chạy hết đườn"
+        },
+        {
+          "title": "Thảo Luận Chung Hỏi đường đi Long Hải - Otosaigon",
+          "url": "https://www.otosaigon.com/threads/hoi-duong-di-long-hai.899208/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Otosaigon - diễn đàn, cộng đồng ô tô số 1 Việt Nam\nOtosaigon - diễn đàn, cộng đồng ô tô số 1 Việt Nam\nOtosaigon - diễn đàn, cộng đồng ô tô số 1 Việt Nam\nOtosaigon - diễn đàn, cộng đồng ô tô số 1 Việt "
+        },
+        {
+          "title": "Đường đi Vũng Tàu từ TP.HCM bằng xe máy nhanh nhất - Shop2banh",
+          "url": "https://shop2banh.vn/tu-van/duong-di-vung-tau-tu-tphcm-bang-xe-may-nhanh-nhat-5921.html?srsltid=AfmBOooQsJlLExOT_S6Aibs5JemyNBW87u6BTQUoavcHr3TO-kV6boB_",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Giỏ hàng\nPhụ tùng xe máy\n\n## Đồ chơi xe máy\n\n## Phụ tùng thay thế\n\n## Vỏ xe máy (Lốp xe)\n\n## Nhớt xe máy\n\n## Dịch vụ sửa chữa\n\n## Phụ tùng theo xe\n\n### Tin tức\n\n# Đường đi Vũng Tàu từ TP.HCM bằng xe m"
+        }
+      ]
+    },
+    {
+      "query": "scenic route Saigon to Vung Tau",
+      "total_results": 10,
+      "actionable_results": 4,
+      "commercial_results": 4,
+      "details": [
+        {
+          "title": "Saigon→Vung Tau by Fast Boat - Vietnam Coracle",
+          "url": "https://www.vietnamcoracle.com/saigon-to-vung-tau-by-ferry-boat/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "slipping between the bows of giant container vessels and freight ships, tugs and barges, fishing boats and canoes, tankers and warships. [...] Boats are boarded at the stern, where there’s a deck with"
+        },
+        {
+          "title": "I'd like to take a day trip from Ho Chi Minh City to Vung Tau. Any ...",
+          "url": "https://www.facebook.com/groups/vietnam.travel.planning/posts/1262014572699832/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Any driver from Saigon will know the route. Some great photo opps on the ferry. Check the photos, don't take the blue road highlighted in the"
+        },
+        {
+          "title": "The Ultimate Vietnam Road Trip: Part One – Ho Chi Minh to Vung Tau",
+          "url": "https://ramblingnortherner.wordpress.com/2014/11/18/the-ultimate-vietnam-road-trip-part-one-ho-chi-minh-to-vung-tau/",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "I’ve often described the traffic in Asia as something of an organised chaos, and this couldn’t be truer in the case of Vietnam. Within minutes of taking to the roads of Saigon, we saw people weaving i"
+        },
+        {
+          "title": "Ho Chi Minh City to Vung Tau: 5 ultimate ways for your trip",
+          "url": "https://vinwonders.com/en/wonderpedia/news/ho-chi-minh-city-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "The route is scenic, passing through rural areas and coastal landscapes, making the drive an enjoyable part of the trip. Private car rentals are widely available in Ho Chi Minh City, with options rang"
+        },
+        {
+          "title": "Ho Chi Minh to Vung Tau: 5 Best Ways to travel",
+          "url": "https://www.bestpricetravel.com/travel-guide/ho-chi-minh-to-vung-tau-2805.html",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "### 3. Speedboat and Ferry\n\nSpeedboat and fеrrу is thе bеѕt аnd fаѕtеѕt but thе mоѕt ехреnѕіvе option to travel from Saigon to Vung Tau. Тhе fеrrу lеаvеѕ аt Веn Nhа Rоng Наrbоur (1 Nguyen Tat Thanh), "
+        },
+        {
+          "title": "The best way to get to Vung Tau from Ho Chi Minh is the new fast ...",
+          "url": "https://www.reddit.com/r/saigon/comments/x3xi6d/the_best_way_to_get_to_vung_tau_from_ho_chi_minh/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Why drive the long way on a dusty highway in Vietnam when one can take a fast route straight there? A straight drive through lush forests on an"
+        },
+        {
+          "title": "What's a good plan for traveling to Vung Tau from Ho Chi Minh?",
+          "url": "https://www.facebook.com/groups/vietnamtravelguideofficial/posts/824926286489570/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Hi everyone. Were coming to Vung Tau from AUS in a few months. The fast ferry from saigon is about $20AUS cheaper than a private max van (for 6"
+        },
+        {
+          "title": "Ho Chi Minh City To Vung Tau By Ferry - Step Into Vietnam",
+          "url": "https://stepintovietnam.com/ho-chi-minh-city-to-vung-tau-by-ferry/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Buy Vietnam eSim here\nBuy Vietnam eSim here\n\nCity skyscrapers recede into the distance and soon you are sharing the river with traditional Vietnamese riverboats, long wooden barges and international t"
+        },
+        {
+          "title": "30 Best Stops Between Ho Chi Minh City and Vung Tau - Wanderlog",
+          "url": "https://wanderlog.com/drive/between/16/456/ho-chi-minh-city-to-vung-tau-drive",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "The top stops along the way from Ho Chi Minh City to Vung Tau (with short detours) are War Remnants Museum, Cu Chi Tunnel, and Saigon Central Post Office."
+        },
+        {
+          "title": "How to Get to Vung Tau from Ho Chi Minh City",
+          "url": "https://vietnamdiscovery.com/vung-tau/how-to-get-to-vung-tau-from-ho-chi-minh-city/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "(+84) 989 383 767\n\n Culture & Arts\n Ho Chi Minh City\n Hanoi\n Attractions\n Hoi An\n Halong Bay\n Sapa\n Hue\n Da Nang\n Nha Trang\n Phu Quoc Island\n Mekong Delta\n More..."
+        }
+      ]
+    },
+    {
+      "query": "best road Saigon Vung Tau coastal",
+      "total_results": 10,
+      "actionable_results": 5,
+      "commercial_results": 4,
+      "details": [
+        {
+          "title": "The Ocean Road: Saigon to Mui Ne - Vietnam Coracle",
+          "url": "https://www.vietnamcoracle.com/the-ocean-road-saigon-to-mui-ne-2/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "May 24, 2020 at 9:56 AM\n\n      Hi Adam,\n\n      If you’re planning on following this coastal route between Saigon and Hoi An, then I would suggest turning inland at Lagi on QL55/55B and taking it all t"
+        },
+        {
+          "title": "Road from Saigon to Vung Tau - Ho Chi Minh City Forum - Tripadvisor",
+          "url": "https://www.tripadvisor.com/ShowTopic-g293925-i8433-k2197030-Road_from_Saigon_to_Vung_Tau-Ho_Chi_Minh_City.html",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Ah I see. It's a properly laid road and is pretty straight all the way. No mountains between here & Vung Tau. Reply. Report"
+        },
+        {
+          "title": "Vung Tau | City by the Sea - Vietnam Coracle",
+          "url": "https://www.vietnamcoracle.com/vung-tau-city-by-the-sea/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "For over a century, Vung Tau was the traditional (and easiest) beach retreat for Saigon residents and expatriates. In the last 10-20 years, however, Vung Tau has been shunned in favour of the ‘better’"
+        },
+        {
+          "title": "Vung Tau – Easy beach escape from Saigon - Runway - Kiitoradalla",
+          "url": "https://runwaykiitoradalla.wordpress.com/2017/06/11/vung-tau-easy-beach-escape-from-saigon/",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "A forty-something mother-wife & fifty-something husband-dad who live the very best time of their life on the runway of ordinary work-leisure-combo. Travelled a lot alone, together and as a family in c"
+        },
+        {
+          "title": "The Ultimate Vietnam Road Trip: Part One – Ho Chi Minh to Vung Tau",
+          "url": "https://ramblingnortherner.wordpress.com/2014/11/18/the-ultimate-vietnam-road-trip-part-one-ho-chi-minh-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "The journey\n\nThe first leg of our journey would take us out of the craziness of Ho Chi Minh and go the seaside city of Vung Tau. I’d never even heard of Vung Tau before looking at the maps, so a one n"
+        },
+        {
+          "title": "From City Streets to Coastal Retreats: A Day in Vung Tau - Peek",
+          "url": "https://www.peek.com/district-1-ho-chi-minh-city-vietnam/r0ar6y/from-city-streets-to-coastal-retreats-a-day-in-vung-tau/ar09zzr4v",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "### A Journey Through Time and Space\n\nAs I embarked on the Vung Tau Day Trip, I was reminded of the countless road trips I took across America in my youth. The open road has always been a place of ref"
+        },
+        {
+          "title": "Ho Chi Minh City to Vung Tau: 5 ultimate ways for your trip",
+          "url": "https://vinwonders.com/en/wonderpedia/news/ho-chi-minh-city-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "## 1. How far is Vung Tau from Ho Chi Minh City?\n\nHo Chi Minh City (also known as Saigon) and Vung Tau are two prominent destinations in southern Vietnam. Once part of Ba Ria – Vung Tau Province, Vung"
+        },
+        {
+          "title": "I'd like to take a day trip from Ho Chi Minh City to Vung Tau. Any ...",
+          "url": "https://www.facebook.com/groups/vietnam.travel.planning/posts/1262014572699832/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Any driver from Saigon will know the route. Some great photo opps on the ferry. Check the photos, don't take the blue road highlighted in the"
+        },
+        {
+          "title": "How to Get to Vung Tau from Ho Chi Minh City",
+          "url": "https://vietnamdiscovery.com/vung-tau/how-to-get-to-vung-tau-from-ho-chi-minh-city/",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "Pros:\n\nCons:\n\nTip: Book tickets online in advance on weekends and holidays to secure your seat.\n\n### Option 2: Hydrofoil Ferry\n\nA more scenic and unique way to get to Vung Tau is by taking a hydrofoil"
+        },
+        {
+          "title": "The best way to get to Vung Tau from Ho Chi Minh is the new fast ...",
+          "url": "https://www.reddit.com/r/GamerAbroad/comments/x3xf6z/the_best_way_to_get_to_vung_tau_from_ho_chi_minh/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "There's a all new method to get to Vung Tau, Vietnam from Ho Chi Minh City (Saigon), it's quick and CHEAP. Why drive the long way on a dusty"
+        }
+      ]
+    },
+    {
+      "query": "scenic drive Ho Chi Minh City Vung Tau",
+      "total_results": 10,
+      "actionable_results": 6,
+      "commercial_results": 3,
+      "details": [
+        {
+          "title": "Ho Chi Minh City to Vung Tau: 5 ultimate ways for your trip",
+          "url": "https://vinwonders.com/en/wonderpedia/news/ho-chi-minh-city-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "The route is scenic, passing through rural areas and coastal landscapes, making the drive an enjoyable part of the trip. Private car rentals are widely available in Ho Chi Minh City, with options rang"
+        },
+        {
+          "title": "Ho Chi Minh To Vung Tau: A Brilliant Southern Vietnam Trip",
+          "url": "https://seniworld.com/ho-chi-minh-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Option 3 (Coastal scenic Route via Can Gio). Route, Ho Chi Minh City → Dong Nai Bridge → QL51 → Vung Tau, Ho Chi Minh City → Long Thanh → QL51 → Vung Tau"
+        },
+        {
+          "title": "How to Get to Vung Tau from Ho Chi Minh City",
+          "url": "https://vietnamdiscovery.com/vung-tau/how-to-get-to-vung-tau-from-ho-chi-minh-city/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Pros:\n\nCons:\n\nTip: Book tickets online in advance on weekends and holidays to secure your seat.\n\n### Option 2: Hydrofoil Ferry\n\nA more scenic and unique way to get to Vung Tau is by taking a hydrofoil"
+        },
+        {
+          "title": "From City Streets to Coastal Retreats: A Day in Vung Tau - Peek",
+          "url": "https://www.peek.com/district-1-ho-chi-minh-city-vietnam/r0ar6y/from-city-streets-to-coastal-retreats-a-day-in-vung-tau/ar09zzr4v",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "### A Journey Through Time and Space\n\nAs I embarked on the Vung Tau Day Trip, I was reminded of the countless road trips I took across America in my youth. The open road has always been a place of ref"
+        },
+        {
+          "title": "From Ho Chi Minh City to The Sea: A Perfect Day in Vung Tau City",
+          "url": "https://activities.marriott.com/asia/vietnam/ho-chi-minh-city/activities/from_ho_chi_minh_city_to_the_sea_a_perfect_day_in_vung_tau_city-XKLYFS",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "### White Palace\n\na French colonial-era mansion built in the late 19th century. Originally used as a retreat for French governors and later as a royal residence, the palace features elegant European a"
+        },
+        {
+          "title": "The Ultimate Vietnam Road Trip: Part One – Ho Chi Minh to Vung Tau",
+          "url": "https://ramblingnortherner.wordpress.com/2014/11/18/the-ultimate-vietnam-road-trip-part-one-ho-chi-minh-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "The journey\n\nThe first leg of our journey would take us out of the craziness of Ho Chi Minh and go the seaside city of Vung Tau. I’d never even heard of Vung Tau before looking at the maps, so a one n"
+        },
+        {
+          "title": "I'd like to take a day trip from Ho Chi Minh City to Vung Tau. Any ...",
+          "url": "https://www.facebook.com/groups/vietnam.travel.planning/posts/1262014572699832/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Any driver from Saigon will know the route. Some great photo opps on the ferry. Check the photos, don't take the blue road highlighted in the"
+        },
+        {
+          "title": "Drive to Vung Tau : r/saigon - Reddit",
+          "url": "https://www.reddit.com/r/saigon/comments/1i0l17c/drive_to_vung_tau/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "100% the Can Gio ferry route is the way to go. It's a much nicer drive, super scenic, low traffic, and the ferry is fun."
+        },
+        {
+          "title": "Road from Saigon to Vung Tau - Ho Chi Minh City Forum - Tripadvisor",
+          "url": "https://www.tripadvisor.com/ShowTopic-g293925-i8433-k2197030-Road_from_Saigon_to_Vung_Tau-Ho_Chi_Minh_City.html",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "Yes, it's a highway (VN-style), not sure what you mean by \"sealed road\". If I ever have to go to Vung Tau I usually take the hydrofoil which is"
+        },
+        {
+          "title": "How is traffic and driving in Vietnam, and what is the best way to get ...",
+          "url": "https://www.facebook.com/groups/2333220550043074/posts/24470644655874013/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "What are the best options for a week-long driving trip in Vietnam, including self-drive car rentals, North vs South, food, and cultural"
+        }
+      ]
+    },
+    {
+      "query": "beautiful road trip HCMC to Vung Tau",
+      "total_results": 10,
+      "actionable_results": 5,
+      "commercial_results": 8,
+      "details": [
+        {
+          "title": "10 Day Trips from Ho Chi Minh City You Must Try - Oxalis Adventure",
+          "url": "https://oxalisadventure.com/day-trips-from-ho-chi-minh-city-must-try/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Several travel companies, such as GetYourGuide and Klook, also offer full-day Tan Lap Floating Village tours from Ho Chi Minh City, including transportation, entrance fees, activities, and tour guides"
+        },
+        {
+          "title": "Ho Chi Minh To Vung Tau: A Brilliant Southern Vietnam Trip",
+          "url": "https://seniworld.com/ho-chi-minh-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Option 3 (Coastal scenic Route via Can Gio). Route, Ho Chi Minh City → Dong Nai Bridge → QL51 → Vung Tau, Ho Chi Minh City → Long Thanh → QL51 → Vung Tau"
+        },
+        {
+          "title": "From City Streets to Coastal Retreats: A Day in Vung Tau - Peek",
+          "url": "https://www.peek.com/district-1-ho-chi-minh-city-vietnam/r0ar6y/from-city-streets-to-coastal-retreats-a-day-in-vung-tau/ar09zzr4v",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "### A Journey Through Time and Space\n\nAs I embarked on the Vung Tau Day Trip, I was reminded of the countless road trips I took across America in my youth. The open road has always been a place of ref"
+        },
+        {
+          "title": "The Ultimate Vietnam Road Trip: Part One – Ho Chi Minh to Vung Tau",
+          "url": "https://ramblingnortherner.wordpress.com/2014/11/18/the-ultimate-vietnam-road-trip-part-one-ho-chi-minh-to-vung-tau/",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "I’ve often described the traffic in Asia as something of an organised chaos, and this couldn’t be truer in the case of Vietnam. Within minutes of taking to the roads of Saigon, we saw people weaving i"
+        },
+        {
+          "title": "Ho Chi Minh City to Vung Tau: Full Travel Guide & Tips",
+          "url": "https://gtrip.vn/travel-blogs/ho-chi-minh-city-to-vung-tau",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Ferry and speedboats are the fastest ways to go to Vung Tau from Ho Chi Minh City\n\nFerry and speedboats are the fastest ways to go to Vung Tau from Ho Chi Minh City\n\n## Recommended tours from Ho Chi M"
+        },
+        {
+          "title": "Ho Chi Minh City to Vung Tau: 5 ultimate ways for your trip",
+          "url": "https://vinwonders.com/en/wonderpedia/news/ho-chi-minh-city-to-vung-tau/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "The route is scenic, passing through rural areas and coastal landscapes, making the drive an enjoyable part of the trip. Private car rentals are widely available in Ho Chi Minh City, with options rang"
+        },
+        {
+          "title": "Vung Tau Day Trip from Ho Chi Minh City - TNK Travel",
+          "url": "https://www.tnktravel.com/tours/vietnam-tours/vietnam-day-trips/day-trips-in-ho-chi-minh-city/vung-tau-beach-1-day-trip/",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "This tour covers the landmarks that have defined Vung Tau for generations. The 32-metre Christ of Vung Tau on Small Mountain dates to 1974 and remains one of the tallest religious statues in Vietnam. "
+        },
+        {
+          "title": "From Ho Chi Minh City to The Sea: A Perfect Day in Vung Tau City",
+          "url": "https://activities.marriott.com/asia/vietnam/ho-chi-minh-city/activities/from_ho_chi_minh_city_to_the_sea_a_perfect_day_in_vung_tau_city-XKLYFS",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "## Itinerary\n\n### Meeting Point\n\n### Vung Tau\n\nVũng Tàu, a popular seaside city, is known for its beautiful beaches, fresh seafood, and relaxing atmosphere. Just a short drive from Ho Chi Minh City, i"
+        },
+        {
+          "title": "How to Get to Vung Tau from Ho Chi Minh City",
+          "url": "https://vietnamdiscovery.com/vung-tau/how-to-get-to-vung-tau-from-ho-chi-minh-city/",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Pros:\n\nCons:\n\nTip: Book tickets online in advance on weekends and holidays to secure your seat.\n\n### Option 2: Hydrofoil Ferry\n\nA more scenic and unique way to get to Vung Tau is by taking a hydrofoil"
+        },
+        {
+          "title": "What are the must-see stops along the way from Ho Chi Minh to ...",
+          "url": "https://www.facebook.com/groups/vietnamtravelguideofficial/posts/938221878493343/",
+          "has_road_content": false,
+          "is_commercial": true,
+          "snippet": "Hanoi food tour, Sa Pa trekking in the mountains for 2 nights, Ninh Binh river and cave tour, Phong Nha river and cave tour, morning coffee"
+        }
+      ]
+    },
+    {
+      "query": "Vung Tau scenic coastal road motorbike",
+      "total_results": 10,
+      "actionable_results": 9,
+      "commercial_results": 4,
+      "details": [
+        {
+          "title": "South Vietnam Motorbike Tours: 10+ Unmissable Riding Spots",
+          "url": "https://motorbiketourexpert.com/south-vietnam-motorbike-tours",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Here are some of the top routes you can explore by Central Vietnam Motorcycle Tours: Vung Tau Coastal Route: Head southeast from Ho Chi Minh City and ride along"
+        },
+        {
+          "title": "Best Coastal Routes for Motorbike Tours in Vietnam",
+          "url": "https://onyabikeadventures.com/best-coastal-route-for-motorbike-tours-in-vietnam",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "### The route\n\nThe route, beginning at Tuy Hoa airport, primarily follows highway QL29 as it hugs the coastal curve towards Vung Ro Bay. The ride is straightforward, with well-paved roads and gentle c"
+        },
+        {
+          "title": "Amazing Routes In Vung Tau - Vietnam Motorbike Tours",
+          "url": "https://vietnammotorcycletours.com/itinerary/vung-tau-motorbike-tours",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "### Day 1. Ho Chi Minh City to Vung Tau Arrival\n\nThe route from Ho Chi Minh to Vung Tau is around 150 kilometers and might take 2 to 3 hours to ride by motorbike.\n\nIf you opt for a motorbike, you can "
+        },
+        {
+          "title": "Motorcycle Road Trip to Vung Tau Lighthouse Vietnam - YouTube",
+          "url": "https://www.youtube.com/watch?v=C5ScZsSfJek",
+          "has_road_content": false,
+          "is_commercial": false,
+          "snippet": "We ate breakfast & travelled to Vung Tau Lighthouse by motorcycle. Definitely worth the visit if you are in #vungtau #vietnam."
+        },
+        {
+          "title": "36 hours to explore Vung Tau City by motorcycle",
+          "url": "https://happyzipmotorbikes.com/36-hours-to-explore-vung-tau-city-by-motorcycle/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "10am – 11am: Visit Vung Tau, visit the small mountain Lighthouse  \n You will drive motorbike along Tran Phu Street until you see the cafe Mr. Ket, where there is a small road nearby to go to the light"
+        },
+        {
+          "title": "30 Great Motorbiking Roads in Vietnam",
+          "url": "https://www.vietnamcoracle.com/the-greatest-riding-roads-in-vietnam/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Way out in the East Sea, 80km off the coast of the Mekong Delta, Côn Sơn is a remote and beautiful island in the Côn Đảo Archipelago. Winding around its windswept and utterly beguiling eastern and sou"
+        },
+        {
+          "title": "Possible to travel to Vung Tau from HCM by moped? - Reddit",
+          "url": "https://www.reddit.com/r/VietNam/comments/15qq8fe/possible_to_travel_to_vung_tau_from_hcm_by_moped/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "There's even a barrier separating the motorbike lane for most of the way. There's 3 possible routes, my favorite is the QL51 - big motorway with"
+        },
+        {
+          "title": "Best Vietnam Motorbike Tours: 5 Suggested Itineraries",
+          "url": "https://www.asiakingtravel.com/blog/vietnam-motorbike-tours-itineraries.html",
+          "has_road_content": true,
+          "is_commercial": true,
+          "snippet": "Day 6: Vung Tau → Mui Ne (220 km)\n\nThe trip progresses along National Highway 51 and Highway 1A, with magnificent views of the sea on these well-engineered roads. The night is spent at magnificent Mui"
+        },
+        {
+          "title": "Best Motorcycle Roads in Bà Rịa-Vũng Tàu - Detecht Roadbook",
+          "url": "https://www.detechtapp.com/roadbook/vietnam/ba-ria-vung-tau",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "### #6 Morning ride\n\nYassine\n\nElevation\n\n94 m\n\nDistance\n\n26 km\n\nEst. Time\n\n26 m 42 s\n\nPrevius picture\nPrevius picture\n\nNext picture\nNext picture\n\nNext picture\nNext picture\n\nNext picture\nNext picture\n\n"
+        },
+        {
+          "title": "Hey, i am planning to travel with motorbike from Ho chi minh to Ha ...",
+          "url": "https://www.facebook.com/groups/VietnamTravel308/posts/1580910229349447/",
+          "has_road_content": true,
+          "is_commercial": false,
+          "snippet": "Does anybody have an experience with this route? Suggestions on where to stop / what to avoid / alternative roads / best views / fun places"
+        }
+      ]
+    }
+  ]
+}

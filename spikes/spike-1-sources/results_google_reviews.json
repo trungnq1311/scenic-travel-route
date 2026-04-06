@@ -1,0 +1,873 @@
+{
+  "source": "google_maps_reviews",
+  "timestamp": "2026-04-04T20:30:39.390309",
+  "places_searched": 20,
+  "total_reviews_collected": 96,
+  "reviews_analyzed": 92,
+  "reviews_with_road_content": 18,
+  "reviews_mentioning_driving": 22,
+  "actionable_ratio": 0.1956521739130435,
+  "pass": true,
+  "details": [
+    {
+      "place_name": "Cap Saint-Jacques",
+      "review_preview": "Mình đến đây không phải mùa du lịch chính nên khá ít hoạt động, cảnh vật cũng cũng nhuốm một màu úa nhiều.\nBuổi sáng ở đỉnh Nghinh Phong khá chói chang nắng vàng nhưng bù lại rất nhiều gió, hãy cẩn tr",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Cap Saint-Jacques",
+      "review_preview": "Chỗ nì quá nổi rùi\nZá ổn với view 30k cho nước\nNước 2 loại: cf và cacao th đỡ chọn\n✨Chủ yếu là ngắm bình minh thôi vì gió rất to tóc rất xấu\nKhuyên mng mặc dày chút đỡ lạnh\nMakeup ít thoai đỡ tốn tgia",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "view"
+      ]
+    },
+    {
+      "place_name": "Cap Saint-Jacques",
+      "review_preview": "Địa điểm đối diện gần tượng Chúa Kito, bạn leo lên trên đỉnh của Mũi Nghinh Phong sẽ thấy gió rất mạnh vào tháng 7. Trưa mát mẻ vừa nghe nhạc vừa ngắm biển sẽ thấy rất yêu đời ❤️Trên đó bạn có thể ngắ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Cap Saint-Jacques",
+      "review_preview": "1 chiếc view để ngắm hoàng hôn, bình minh quá ổn áp, gió lộng siêu chill, đi mùa hè chiều tối lên đây ngắm hoàng hôn, nhâm nhi cốc cacao đá, tận hưởng từng cơn gió, tiếng sóng, tầu thuyền phía xa cùng",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "view",
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Cap Saint-Jacques",
+      "review_preview": "Cổng trời và mũi nguyên Phong khá gần nhau góc này mình chụp là nhìn lên mũi Minh Phong nằm ngay đường đi xuống bãi biển lúc 11.30 khá nắng nhưng lên hình vẫn đẹp biển xanh",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Lighthouse Bunker",
+      "review_preview": "Lô cốt vẫn còn khá nguyên vẹn nhưng không được chăm sóc nên rất tàn tạ...\nCũng là một địa điểm khá lâu đời nên nếu được chăm sóc để tham quan cũng sẽ rất hay, ở đây nhìn thấy bãi trước, bạch dinh khá ",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Lighthouse Bunker",
+      "review_preview": "Hệ thống lô cốt nằm gần ngon hải đăng Vũng Tàu, có tầm quan sát tốt đường bờ biển và tàu bè qua lại. Lô cốt rất kiên cố bằng bê tông mặc dù đã qua rất nhiều năm, trên đỉnh có các ụ để pháo nhưng hiện ",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Lighthouse Bunker",
+      "review_preview": "Nơi này thiên nhiên thoáng mát ,có một vài công trình chiến tranh và một ngọn hải đăng còn sót lại có thể tham quan miễn phí quanh ngọn núi",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Lighthouse Bunker",
+      "review_preview": "Một địa điểm còn ít người biết đến ở Vũng Tàu, được xây dựng từ  khoảng 100 năm trước nơi đây là một cụm lô cốt lớn bố trí 3-4 khẩu đại pháo (bởi vì cỡ nòng tới 300mm, dài hơn 10m). Từ vị trí này có t",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Lighthouse Bunker",
+      "review_preview": "Lâu rồi mới chạy lên cung đường lên ngọn Hải đăng.Mình thấy biển để gà đồi và chạy theo. Dẩn tới chổ này. Từ đây nhìn VT thực đẹp. Chổ này cũng khá nhiều bạn tới check in !",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "cung đường",
+        "biển"
+      ]
+    },
+    {
+      "place_name": "An Binh beach",
+      "review_preview": "Vòi tắm ngoài trời thì hư, vô tè lấy 5k. Bãi vắng ko có gì hay",
+      "rating": 1,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "An Binh beach",
+      "review_preview": "Bãi rộng, đậu Ô Tô Free, nhiều cây xanh mát mẻ, Góc chill, gió mát lạnh, DV hải sản cạnh bên, giá mềm, chiều khách, chế biến nhanh 😍 Giá 100k/Ghế (gồm VS, tắm nước ngọt) Bên trong rộng, di chuyển ko b",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "An Binh beach",
+      "review_preview": "Bãi tắm rộng rãi, món ăn ngồi, chi phí bình dân, thích hợp gia đình đổi gió, tổ chức sự kiện",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "An Binh beach",
+      "review_preview": "Đồ ăn tạm được, giá khá chát (có lẽ do mình đi vào dịp tết). Nhà hàng tầm 8h mới mở cửa, là khu du lịch nhưng cung cách phục vụ kiểu gia đình. Gọi là resort nhưng phòng giống như nhà nghỉ chứ kg được ",
+      "rating": 3,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "An Binh beach",
+      "review_preview": "Biển khá ít sóng và cũng không được sạch lắm. Tuy nhiên việc chặt chém khi thuê bàn ghế có vẻ như không diễn ra vì có để sẵn giá tiền thuê bàn ghế. Hải sản mua về vẫn bị cân thiếu khá nhiều, mua 1 kg ",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Nuoc Ngot pass",
+      "review_preview": "Một trong những nơi có view đẹp nhất khu vực đường đi Long Hải. Mình hầu như năm nào cũng đi qua vài lần nhưng vẫn cảm thấy rất chill khi ở đây.",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "Long Hải",
+        "view"
+      ]
+    },
+    {
+      "place_name": "Nuoc Ngot pass",
+      "review_preview": "Khu vực khá chill vào mỗi buổi chiều",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Nuoc Ngot pass",
+      "review_preview": "Đường đèo đàn sửa , mà cũng có 1 đoạn ngắn ngũn, chạy không đã",
+      "rating": 3,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "đèo"
+      ]
+    },
+    {
+      "place_name": "Freshwater Pass",
+      "review_preview": "Ai muốn đi tới đây checkin thì không nên tới trong khoảng thời gian này, vì đang sửa chữa công trình không biết khi nào xong. 2 bên xe ủi, xe tải rất nhiều, chú ý lái xe cẩn thận.",
+      "rating": 2,
+      "has_road_content": false,
+      "mentions_driving": true,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Freshwater Pass",
+      "review_preview": "Khu du lịch Đèo nước ngọt có cho camping tự túc giá hợp lý, các chú rất chu đáo nhiệt tình lo đèn cho khách vào tối. Nhà có trẻ tha hồ chơi và bắt cá khi nc xuống. Hiện tại đang thi công đường nên khu",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "đèo"
+      ]
+    },
+    {
+      "place_name": "Freshwater Pass",
+      "review_preview": "Đoạn cua rất đẹp từ Long Hải qua làng chài Phước Hải, một bên là biển một bên là núi, phong cảnh hữu tình. Long Hải/ Phước Hải mát mẻ hơn Vũng Tàu, nhiều rừng nhiều cây, biển sạch hải sản rẻ mà rất tư",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "Long Hải",
+        "Phước Hải",
+        "biển",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Freshwater Pass",
+      "review_preview": "Điểm checkin free hóng gió trời siêu mát ạ. Lúc mình đi là hoàng hôn đẹp lớm",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Freshwater Pass",
+      "review_preview": "Một địa điểm checkin khá thú vị, tuy nhiên mọi người lưu ý an toàn nha. Góc cua khá đẹp để quay video lên hình và chụp ảnh. Chỉ đơn giản nhưng khá là đẹp. Nên checkin thử đi nhé.",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Long Hai Beach",
+      "review_preview": "Xét mặt bằng chung thì bãi Long Hải sạch hơn mấy chỗ lân cận gồi. Mãi yêuuuuu và sẽ còn ghé lạiii",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "Long Hải"
+      ]
+    },
+    {
+      "place_name": "Long Hai Beach",
+      "review_preview": "Biển đẹppp, thích nhất là hôm mình đi vẫn chưa đông khách du lịch nên rất thoángg!! Tha hồ chụp choẹt 🫶🏻",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Long Hai Beach",
+      "review_preview": "Biển đẹp, vắng người hơn so với Vũng Tàu, gửi xe máy vào bãi 5K (đối diện cổng Đinh Cô) hoặc để dọc công viên thì miễn phí, khoá cổ cẩn thận thì không sao, tắm nước ngọt 10K/người.",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Long Hai Beach",
+      "review_preview": "Biển đẹp nha, đi ở đây ít hơn bãi trước , view đẹp và đồ ăn ở đây khá ổn không đắt cũng không rẻ.",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "view",
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Rất muốn đề xuất cho mọi người muốn leo núi có thể để ý tới Núi Dinh nghen, bình thường sẽ không có đông, rất vắng. Thường cũng có người chạy bộ lên xuống, nhưng trên cao thì ít, cũng như rất mát mẻ, ",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "Núi Dinh",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Đây là cung đầu tiên mình đi trekking và được tận hưởng vẻ đẹp tuyệt vời này. Maybe mình sẽ quay lại núi Dinh vào 1 ngày ko xa",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "Núi Dinh",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Núi rất sạch , ít thấy rác, thiên nhiên đẹp, các bạn nên thử đi dốc nấm nha . Siêu thích",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Nơi luyện tập chạy bộ địa hình lý tưởng. Có nhiều đường đi, có map và cột dây sẵn. Phù hợp với nhiều nhu cầu trekking từ nhẹ nhàng đến thở dốc. Có nhiều đỉnh nhưng không có chóp. Núi rộng có suối nhưn",
+      "rating": 3,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Núi không cao nên thích hợp cho ai thử sức leo núi lần đầu.",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Núi Dinh mùa này đẹp và nhiều cây xanh. Đoàn nhà mình có 10 người, tổng cộng cung đường 15,3km. Con đường lên là đường mòn bằng phẳng. Đi hướng chùa Hang Mai rồi lên Đỉnh La Bàn và quay về đi đường nh",
+      "rating": 4,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "Núi Dinh",
+        "cung đường",
+        "con đường",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Núi Dinh là điểm đến thú vị cho những ai thích khám phá thiên nhiên. Đường lên núi khá mát mẻ với không khí trong lành và cây cối xanh tươi. Tôi ấn tượng với khung cảnh hoang sơ nhưng đầy sức sống ở đ",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "Bà Rịa",
+        "Núi Dinh",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Núi Dinh Bà Rịa là một điểm đến không thể bỏ qua khi du lịch tại Bà Rịa - Vũng Tàu. Với độ cao khoảng 500m, núi Dinh mang đến cho du khách một không gian thiên nhiên hùng vĩ và trong lành. Đường lên n",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "Bà Rịa",
+        "Núi Dinh",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Núi Dinh - một cô gái hướng nội, yêu biển - chọn cất mình lên độ cao 500m tại huyện Tân Thành (nay là TX Phú Mỹ) tỉnh Bà Rịa - Vũng Tàu, cách trung tâm thành phố Bà Rịa 13 km và trung tâm thành phố Vũ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "Bà Rịa",
+        "Núi Dinh",
+        "biển",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Núi Dinh",
+      "review_preview": "Trải nghiệm leo núi, tắm suối ở đây rất tuyệt.\n\nNgoài đến núi Dinh để đi tắm suối, cắm trại thì trải nghiệm leo núi ở đây được nhiều người biết đến và tham gia.\n\nKhông khí trong lành, leo núi theo đườ",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "Núi Dinh",
+        "cung đường",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Thuy Van Beach Vung Tau",
+      "review_preview": "Biển vẫn đẹp như thế, mọi người biết giữ gìn vệ sinh hơn nên biển ko có nhiều rác",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Thuy Van Beach Vung Tau",
+      "review_preview": "Bãi biển tắm nhưng không có vị trí thay đồ và tắm nước ngọt. Dạo gần đây hơi vắng :)))\nNên gửi xe để đi tắm biển và tham quan an toàn",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Thuy Van Beach Vung Tau",
+      "review_preview": "Bãi tắm đẹp, nhiều cây xanh ghế đá chỉ tiếc là khu này k trang bị vòi tắm nc ngọt công cộng.",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Thuy Van Beach Vung Tau",
+      "review_preview": "Công viên bên bãi biển Thùy Vân rất đẹp, nhiều tượng đài phối cảnh thân thiện. Bãi cát dài. Tp đang xây dựng hầm ra biển nên view của nhiều khách sạn sẽ bị hạn chế.hy vọng cuối năm xong. Tuy nhiên, ch",
+      "rating": 4,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "view",
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Thuy Van Beach Vung Tau",
+      "review_preview": "m đi dịp cuối tuần có diễn ra lễ hội ẩm thực rất đông vui có sân khấu diễn thời trang ca nhạc gió viển mát sạch sẽ vui vẻ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Cafe Bờ Hồ",
+      "review_preview": "Cafe Bờ Hồ là một điểm đến tuyệt vời để tận hưởng không khí trong lành của Vũng Tàu. Quán có không gian thoáng đãng, được thiết kế tinh tế, mang lại cảm giác thư thái ngay khi bước vào. Đặc biệt, vị t",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Cafe Bờ Hồ",
+      "review_preview": "View ok, giá bình dân, sao quán đóng cửa cả năm nay vậy chủ quán?",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "view"
+      ]
+    },
+    {
+      "place_name": "Cafe Bờ Hồ",
+      "review_preview": "Quán mát mẻ, không gian yên bình thoải mái lắm luônnnnn, chắc chắn sẽ ghé lại",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Cafe Bờ Hồ",
+      "review_preview": "Cappuccino có lớp foam mịn màng.",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Cafe Bờ Hồ",
+      "review_preview": "Khung cảnh thoáng mát, hữu tình. Cafe Buôn Mê Thuộc ngon tuyệt vời.  Mời mọi người đến thưởng thức và cảm nhận",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Bãi Trước Vũng Tàu",
+      "review_preview": "Đi đâu đi vẫn thấy thích vũng tàu,,bãi trước bãi sau núi lớn núi nhỏ",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "núi"
+      ]
+    },
+    {
+      "place_name": "Bãi Trước Vũng Tàu",
+      "review_preview": "Công viên Bãi Trước Vũng Tàu dọc theo đường Quang Trung, tiếp giáp với đường Hạ Long dọc bờ biển.",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Bãi Trước Vũng Tàu",
+      "review_preview": "Vũng Tàu là thành phố biển nổi tiếng với hai bãi tắm quen thuộc: Bãi Trước và Bãi Sau. Bãi Trước nằm gần trung tâm, mặt biển hiền hòa, sóng nhẹ, xung quanh là hàng dừa và công viên xanh mát. Khi chiều",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Bãi Trước Vũng Tàu",
+      "review_preview": "Bãi sạch sẽ, đẹp mát mẻ. Tiện di chuyển. Nhiều hải sản tươi sống, dân cư thân thiện. Nhiều ghe tàu cập bến",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Bãi Trước Vũng Tàu",
+      "review_preview": "Bãi biển đẹp,nằm giữa 2 ngọn núi, khung cảnh thơ mộng, ít sóng hơn bãi sau nhiều, nằm ngay khu công viên và những trục huyết mạch trung tâm, có vòi tắm trán. Nhược điểm là bãi cát quá nhỏ, mùa cao điể",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển",
+        "núi"
+      ]
+    },
+    {
+      "place_name": "National Highway No.51 Toll Plaza",
+      "review_preview": "Đường đẹp có làn xe khẩn cấp\nHay kẹt xe khúc giao với Mai Chí Thọ\nGiá vé toàn tuyến tầm 100.000 đồng\nTrên cao tốc có trạm dừng nghỉ chân",
+      "rating": 4,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "đường đẹp"
+      ]
+    },
+    {
+      "place_name": "National Highway No.51 Toll Plaza",
+      "review_preview": "Đường cao tốc mà ngày nào cũng kẹt xe ! Đi 20km hết hơn 1 tiếng đồng hồ\nPhí thì cao ngất",
+      "rating": 1,
+      "has_road_content": false,
+      "mentions_driving": true,
+      "keywords_found": []
+    },
+    {
+      "place_name": "National Highway No.51 Toll Plaza",
+      "review_preview": "Có chỗ đậu xe rộng rãi thoải mái, nhà vệ sinh sạch sẽ...tuy nhiên giá cả đồ ăn, thức uống khá mắc...đây là 1 điểm trừ lớn",
+      "rating": 3,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "National Highway No.51 Toll Plaza",
+      "review_preview": "nhân viên thái độ với khách hàng, thiếu tôn trọng, khi khách hàng đang gặp vấn đề về khoản thanh toán thay vì nhẹ nhàng hướng dẫn thì cô này vừa bấm dt vừa nói chuyện rất cọc",
+      "rating": 1,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "National Highway No.51 Toll Plaza",
+      "review_preview": "Đường cao tốc Thành phố Hồ Chí Minh – Long Thành – Dầu Giây (ký hiệu toàn tuyến là CT 29, VNM.svg[1]) là đường cao tốc nối Thành phố Hồ Chí Minh với Đồng Nai, có điểm đầu tuyến là nút giao thông An Ph",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": true,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Thanh Long 1 Rest Stop (Highway 51)",
+      "review_preview": "Bánh bao ngon, nhân vừa ăn, còn giữ mùi khai đặc trưng.\nGiá 20.000/c (trứng cút)\n25.000/c (trứng muối)\nBánh giò 15.000/c\nBánh phèn la cũng ok, làm mới.",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Thanh Long 1 Rest Stop (Highway 51)",
+      "review_preview": "Mỗi lần từ Sài Gòn hoặc miền Tây lên, gia đình mình vẫn thường ghé trạm dừng chân Thanh Long như một điểm quen thuộc. Sau nhiều năm mình thấy nơi đây vẫn giữ được sự ổn định đáng khen, từ chất lượng s",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Thanh Long 1 Rest Stop (Highway 51)",
+      "review_preview": "Rộng rãi, sạch, mát mẻ\nBánh bao 69 và bánh mì chả cá ok",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Thanh Long 1 Rest Stop (Highway 51)",
+      "review_preview": "Bánh phèn la hiện tại giá 40k/hộp, nóng ngon, nhà vệ sinh sạch sẽ có vòi xịt, trạm mát mẻ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Thanh Long 1 Rest Stop (Highway 51)",
+      "review_preview": "Hủ tiếu ngon nha mọi người. Nhiều món.\nGiá từ 40-50k. khá đông khách, phục vụ nhanh, chuyên nghiệp và chu đáo hơn nữa là mình cho 5 sao.",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "1991's Coffee & Beer",
+      "review_preview": "Nhiều đánh giá tiêu cực thật ra là đang bỏ lỡ ý chính.\n\nQuán này đúng với những gì nó vốn có. Nó không cố gắng trở thành điều gì khác ngoài một quán cà phê nằm trong một khu dân cư ven biển đang hoạt ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "view",
+        "coastal",
+        "biển"
+      ]
+    },
+    {
+      "place_name": "1991's Coffee & Beer",
+      "review_preview": "Quán nhỏ xíu nằm cuối 1 con hẻm khá xô bồ. Nhưng điều làm cho mình thất vọng nhất là… quán xây dựng phong cách theo kiểu view biển, chill chill. Nhưng bãi biển thì đầy rác rến … thiệt tình mình chill ",
+      "rating": 1,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "view",
+        "biển"
+      ]
+    },
+    {
+      "place_name": "1991's Coffee & Beer",
+      "review_preview": "Menu không nhiều món, nhưng khá ok, mình uống caramel đá xay, ngon ngoài mong đợi.\nMình đi giấc chiều, vừa kịp đón mặt trời lặn và ngắm hoàng hôn ở đèo nước ngọt.\nQuán có cả đào nữa cơ, tận 3 em",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "đèo"
+      ]
+    },
+    {
+      "place_name": "1991's Coffee & Beer",
+      "review_preview": "Mình gọi 1 trà vải và 1 cà phê sữa. Giá hợp lý, nước uống ổn. Có người hỗ trợ dắt xe. Đi xe ô tô thì phải đậu ở đường lớn và đi bộ vào. Quan trọng là quả view quá choáy. Các bạn nên đến từ 15h-16h để ",
+      "rating": 5,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "view"
+      ]
+    },
+    {
+      "place_name": "1991's Coffee & Beer",
+      "review_preview": "Quán cafe nhỏ xinh nằm trong một con hẻm nhỏ vào làng chài. Mình đi từ Phước Hải qua, quán cách đèo nước ngọt khoảng 5km\nQuán decor theo phong cách cổ điển, mình đi vào ngày lễ khá đông, bạn giữ xe hỗ",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "Phước Hải",
+        "đèo",
+        "biển"
+      ]
+    },
+    {
+      "place_name": "RiN Coffee",
+      "review_preview": "RiN Coffee là một điểm đến lý tưởng để thư giãn và tận hưởng không gian yên bình. Quán có thiết kế ấm cúng, tạo cảm giác thoải mái ngay khi bước vào. Đồ uống ở đây rất đa dạng, từ cà phê truyền thống ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "RiN Coffee",
+      "review_preview": "Có hẳn 1album dành cho quán , quán decor ấm cúng , tone trắng đèn vàng làm chủ đạo nên nhìn dễ chịu lắm . Nhân viên quán hay anh chị chủ siêu nhiệt tình và dễ thương. Nguyên liệu toàn những loại tươi ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "RiN Coffee",
+      "review_preview": "Quán cà phê view đường lớn, có phòng lạnh, cà phê máy, đậu xe lề đường, nhiều chỗ ngồi, vậy là đủ 👍",
+      "rating": 4,
+      "has_road_content": true,
+      "mentions_driving": true,
+      "keywords_found": [
+        "view"
+      ]
+    },
+    {
+      "place_name": "RiN Coffee",
+      "review_preview": "Quán kiểu boho tone trắng xinh vibe ấm. Nước khá ngon, nhân viên dễ thương, không gian dễ chịu.",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "RiN Coffee",
+      "review_preview": "Lâu rồi ko quay lại quán, lần này nước ngon hơn so với 2 lần trước,menu quán so với những quán khác ít đa dạng hơn, nhưng quan trọng vẫn là chất lượng nước, lần này mình thử món mới của quán... và mìn",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Cà phê phố vườn nhãn",
+      "review_preview": "Cà phê phố vườn nhãn ở Long Hải mang đến một không gian xanh mát, yên bình như một khu vườn thực sự. Quán được thiết kế gần gũi với thiên nhiên, với nhiều cây xanh và tiểu cảnh, tạo cảm giác thư thái ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "Long Hải"
+      ]
+    },
+    {
+      "place_name": "Cà phê phố vườn nhãn",
+      "review_preview": "Quán đẹp . thoáng mát. Vệ sinh sạch sẽ.\nPhục vụ rất nhiều tình và thoải mái .\nRất hài lòng . cám ơn",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Cà phê phố vườn nhãn",
+      "review_preview": "Giá mềm, mặt bằng rộng, thức uống đa dạng. Tên thức uống rất ấn tượng nhe (sinh tố mặt trời, sinh tố biển)",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": [
+        "biển"
+      ]
+    },
+    {
+      "place_name": "Cà phê phố vườn nhãn",
+      "review_preview": "Thoáng mát. Cà phê ổn",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Cà phê phố vườn nhãn",
+      "review_preview": "Rộng rãi thoáng mát.",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm Dừng Chân Hana",
+      "review_preview": "Cơm ngon, sạch, phục vụ nhanh nhẹn, bàn ghế nhiều không gian rộng , toilet sạch sẽ, đoàn mình có dịp qua thường hay ghé vào.\nChỗ đậu xe rộng rãi",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm Dừng Chân Hana",
+      "review_preview": "Đồ ăn ngon, chủ quán nhiệt tình",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm Dừng Chân Hana",
+      "review_preview": "Cơm ngon, đồ ăn ok. Làm nhanh. Giá vừa phải. Ko rẻ ko mắc",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm Dừng Chân Hana",
+      "review_preview": "Quán ăn ok, thoáng, có võng nằm nghỉ và sân vườn phía sau cũng mát mẻ.",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm Dừng Chân Hana",
+      "review_preview": "Đồ ăn ngon , rất  ít bột ngọt nhưng hay hết món , mình đi 2 lần và lần nào cũng vậy cả . Giá cả hợp lý nha",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân Trí Hải",
+      "review_preview": "Trạm dừng chân này OK.\nToilet sạch sẽ.\nĐồ ăn, đồ uống giá phải chăng.\nNgày trong tuần chỉ có 2 món là cơm và bún bò. chứ không có những món combo giới thiệu trên menu quảng cáo.\nĐiểm trừ duy nhất là b",
+      "rating": 4,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân Trí Hải",
+      "review_preview": "Bún bò , cơm tấm giá bình dân , dịch vụ tốt , lần sau mình sẻ ghé ủng hộ và giới thiệu bạn bè Ace ghé tham quan mua sắm",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân Trí Hải",
+      "review_preview": "Trạm dừng chân Trí Hải – Long Điền thật sự là một điểm dừng lý tưởng trên hành trình dài. Không gian rộng rãi, thoáng mát và rất sạch sẽ. Mình đặc biệt ấn tượng với cách bố trí khu vực nghỉ chân, nhà ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": true,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân Trí Hải",
+      "review_preview": "Trạm dừng chân Trí Hải Long Điền là điểm dừng chân tuyệt vời trên hành trình. Không gian sạch sẽ, thoáng mát, nhân viên thân thiện và phục vụ rất nhanh chóng. Đồ ăn ngon, giá cả hợp lý, đặc biệt là cá",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân Trí Hải",
+      "review_preview": "Nóng bức\nBực bôi\nTranh gianh\nTrải nghiệm kém đến mức tồi tệ\nTài xế lùa khách vào để có hoa hồng\nQuá nóng nóng khủng khiếp xô bồ như cái chợ\nĂn uốn phục vụ tệ đô ăn rất dở khuyến cáo ko nên vào ko nên ",
+      "rating": 1,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân nút giao Xuyên Mộc-hồ Tràm-bình Châu",
+      "review_preview": "Được dân địa phương giới thiệu và đã trải nghiệm. Đầy đủ tiện ích. Cơm sườn nướng ngon. Gà chiên sốt tuyệt vời. Phục vụ nhiệt tình nhớ cả thói quen khách dù mới ghé 1 lần+++",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân nút giao Xuyên Mộc-hồ Tràm-bình Châu",
+      "review_preview": "Quán sạch sẽ thoáng mát, giá cả bình dân . Đặt biệt cơm rất ngon và vừa miệng . 10đ",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân nút giao Xuyên Mộc-hồ Tràm-bình Châu",
+      "review_preview": "Bồ câu ngon, rẻ, chủ trại thân thiện, nhiệt tình.",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân nút giao Xuyên Mộc-hồ Tràm-bình Châu",
+      "review_preview": "Hàng chất lượng, bồ câu đẹp, chủ thân thiện",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    },
+    {
+      "place_name": "Trạm dừng chân nút giao Xuyên Mộc-hồ Tràm-bình Châu",
+      "review_preview": "tư vấn nhiệt tình, chất lượng bồ câu tốt",
+      "rating": 5,
+      "has_road_content": false,
+      "mentions_driving": false,
+      "keywords_found": []
+    }
+  ]
+}

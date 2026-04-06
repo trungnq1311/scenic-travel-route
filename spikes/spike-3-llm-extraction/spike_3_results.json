@@ -1,0 +1,306 @@
+{
+  "spike": "spike_3_llm_multi_source_extraction",
+  "corridor": "Saigon -> Vung Tau",
+  "timestamp": "2026-04-05T11:38:54",
+  "sources_used": [
+    "web_search",
+    "tiktok",
+    "google_reviews"
+  ],
+  "total_source_items": 112,
+  "overall_pass": true,
+  "best_model": "Qwen 3.6 Plus",
+  "best_accuracy_pct": 95.5,
+  "model_results": [
+    {
+      "model": "Qwen 3.6 Plus",
+      "model_id": "qwen/qwen3.6-plus:free",
+      "success": true,
+      "elapsed_seconds": 179.4,
+      "passed": true,
+      "evaluation": {
+        "valid_json": true,
+        "routes_found": 4,
+        "total_waypoints": 22,
+        "waypoints_with_coords": 22,
+        "waypoints_verified": 21,
+        "waypoints_hallucinated": 0,
+        "waypoint_accuracy_pct": 95.5,
+        "roads_mentioned": 9,
+        "known_roads_found": 6,
+        "scenic_segments": 6,
+        "corroborated_segments": 4,
+        "source_attribution_present": true,
+        "pois_found": 5,
+        "cross_source_corroborations": 4,
+        "details": [
+          {
+            "name": "TP. Hồ Chí Minh",
+            "lat": 10.7769,
+            "lng": 106.7009,
+            "in_bbox": true,
+            "gt_match": "Sài Gòn / TP.HCM",
+            "distance_km": 0.0,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Xa lộ Hà Nội",
+            "lat": 10.8,
+            "lng": 106.75,
+            "in_bbox": true,
+            "gt_match": "Hầm Thủ Thiêm",
+            "distance_km": 4.32,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Cầu Đồng Nai",
+            "lat": 10.81,
+            "lng": 106.85,
+            "in_bbox": true,
+            "gt_match": "Phà Cát Lái",
+            "distance_km": 10.29,
+            "verified": false,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Ngã ba Vũng Tàu",
+            "lat": 10.82,
+            "lng": 106.9,
+            "in_bbox": true,
+            "gt_match": "Long Thành",
+            "distance_km": 6.91,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Bà Rịa",
+            "lat": 10.505,
+            "lng": 107.175,
+            "in_bbox": true,
+            "gt_match": "Bà Rịa",
+            "distance_km": 1.26,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Vũng Tàu",
+            "lat": 10.345,
+            "lng": 107.084,
+            "in_bbox": true,
+            "gt_match": "Vũng Tàu",
+            "distance_km": 0.12,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Hồ Chí Minh",
+            "lat": 10.7769,
+            "lng": 106.7009,
+            "in_bbox": true,
+            "gt_match": "Sài Gòn / TP.HCM",
+            "distance_km": 0.0,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Hồ Tràm",
+            "lat": 10.48,
+            "lng": 107.25,
+            "in_bbox": true,
+            "gt_match": "Phước Hải",
+            "distance_km": 2.73,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Hồ Cốc",
+            "lat": 10.45,
+            "lng": 107.3,
+            "in_bbox": true,
+            "gt_match": "Phước Hải",
+            "distance_km": 4.36,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Bình Châu",
+            "lat": 10.41,
+            "lng": 107.38,
+            "in_bbox": true,
+            "gt_match": "Hồ Tràm",
+            "distance_km": 6.59,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Phước Hải",
+            "lat": 10.38,
+            "lng": 107.15,
+            "in_bbox": true,
+            "gt_match": "Long Sơn",
+            "distance_km": 6.95,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Long Hải",
+            "lat": 10.39,
+            "lng": 107.13,
+            "in_bbox": true,
+            "gt_match": "Long Sơn",
+            "distance_km": 4.51,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Vũng Tàu",
+            "lat": 10.345,
+            "lng": 107.084,
+            "in_bbox": true,
+            "gt_match": "Vũng Tàu",
+            "distance_km": 0.12,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Hồ Chí Minh",
+            "lat": 10.7769,
+            "lng": 106.7009,
+            "in_bbox": true,
+            "gt_match": "Sài Gòn / TP.HCM",
+            "distance_km": 0.0,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Đại lộ Võ Văn Kiệt",
+            "lat": 10.76,
+            "lng": 106.68,
+            "in_bbox": true,
+            "gt_match": "Sài Gòn / TP.HCM",
+            "distance_km": 2.96,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Hầm Thủ Thiêm",
+            "lat": 10.775,
+            "lng": 106.72,
+            "in_bbox": true,
+            "gt_match": "Hầm Thủ Thiêm",
+            "distance_km": 0.95,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Phà Cát Lái",
+            "lat": 10.78,
+            "lng": 106.78,
+            "in_bbox": true,
+            "gt_match": "Phà Cát Lái",
+            "distance_km": 2.94,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Vũng Tàu",
+            "lat": 10.345,
+            "lng": 107.084,
+            "in_bbox": true,
+            "gt_match": "Vũng Tàu",
+            "distance_km": 0.12,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Hồ Chí Minh",
+            "lat": 10.7769,
+            "lng": 106.7009,
+            "in_bbox": true,
+            "gt_match": "Sài Gòn / TP.HCM",
+            "distance_km": 0.0,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Ngã ba Vũng Tàu",
+            "lat": 10.82,
+            "lng": 106.9,
+            "in_bbox": true,
+            "gt_match": "Long Thành",
+            "distance_km": 6.91,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "Long Sơn",
+            "lat": 10.43,
+            "lng": 107.05,
+            "in_bbox": true,
+            "gt_match": "Long Sơn",
+            "distance_km": 5.37,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          },
+          {
+            "name": "TP. Vũng Tàu",
+            "lat": 10.345,
+            "lng": 107.084,
+            "in_bbox": true,
+            "gt_match": "Vũng Tàu",
+            "distance_km": 0.12,
+            "verified": true,
+            "hallucinated": false,
+            "has_sources": true
+          }
+        ]
+      },
+      "checks": {
+        "valid_json": true,
+        "has_routes": true,
+        "waypoint_accuracy_70pct": true,
+        "no_excessive_hallucinations": true,
+        "source_attribution": true,
+        "has_corroborations": true,
+        "known_roads_found": true
+      }
+    },
+    {
+      "model": "GPT-oss 120B",
+      "model_id": "openai/gpt-oss-120b:free",
+      "success": false,
+      "error": "'NoneType' object has no attribute 'strip'",
+      "elapsed_seconds": 99.4
+    },
+    {
+      "model": "Llama 3.3 70B",
+      "model_id": "meta-llama/llama-3.3-70b-instruct:free",
+      "success": false,
+      "error": "Max retries exceeded",
+      "elapsed_seconds": 127.9
+    }
+  ]
+}
