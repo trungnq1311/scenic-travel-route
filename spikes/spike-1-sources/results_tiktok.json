@@ -1,0 +1,503 @@
+{
+  "source": "tiktok_ensembledata",
+  "timestamp": "2026-04-04T20:30:27.575604",
+  "scraping_failed": false,
+  "total_descriptions_found": 43,
+  "descriptions_analyzed": 30,
+  "descriptions_with_road_content": 16,
+  "actionable_ratio": 0.5333333333333333,
+  "pass": true,
+  "note": null,
+  "details": [
+    {
+      "description": "Lịch trình Phước Hải sáng đi - chiều về cho mấy bạn thích đi phượt trong ngày đây🥰 #langchaiphuochai #phuochai #vungtau #phuochaivungtau #haisanphuochai ",
+      "stats": {
+        "plays": 153359,
+        "likes": 3161
+      },
+      "hashtags": [
+        "langchaiphuochai",
+        "phuochai",
+        "vungtau",
+        "phuochaivungtau",
+        "haisanphuochai"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "Phước Hải"
+      ]
+    },
+    {
+      "description": "Trả lời @tnhan_339 còn source là share luôn cho mng #xh #fyp #vungtau #vungtauangi ",
+      "stats": {
+        "plays": 838966,
+        "likes": 38358
+      },
+      "hashtags": [
+        "xh",
+        "fyp",
+        "vungtau",
+        "vungtauangi"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Tour quay đầu Sài Gòn - Vũng Tàu, cập nhật tình hình QL51 #LearnOnTikTok #ancungtiktok #reviewanngon #foodreview #dulich ",
+      "stats": {
+        "plays": 62208,
+        "likes": 1747
+      },
+      "hashtags": [
+        "learnontiktok",
+        "ancungtiktok",
+        "reviewanngon",
+        "foodreview",
+        "dulich"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "QL51"
+      ]
+    },
+    {
+      "description": "Phượt Sài Gòn - Vũng Tàu bằng Evo Grand ,Test pin Evo grand #phuot#evogrand#xuhuong ",
+      "stats": {
+        "plays": 1131,
+        "likes": 13
+      },
+      "hashtags": [
+        "phuot",
+        "evogrand",
+        "xuhuong"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Mất 8 tiếng để làm ra cái vlog mini này 🥹 tự nhiên cái thấy đi phượt xả stress mà về stress hơn… #vungtau #saigon #phuotsaigon ",
+      "stats": {
+        "plays": 1228,
+        "likes": 53
+      },
+      "hashtags": [
+        "vungtau",
+        "saigon",
+        "phuotsaigon"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "SG- Vũng Tàu mặc sẵn tã nha mấy ní 🙂. Có ch.ốt Cầu Suối Cả hướng VT-SG 🫣 #vungtau #tet #phượt #xuhuong #viral ",
+      "stats": {
+        "plays": 9643,
+        "likes": 38
+      },
+      "hashtags": [
+        "vungtau",
+        "tet",
+        "phượt",
+        "xuhuong",
+        "viral"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Vlog phượt sài gòn - Vũng tàu. Phần 1. #phuot #Vlog #anuong.",
+      "stats": {
+        "plays": 789,
+        "likes": 18
+      },
+      "hashtags": [
+        "phuot",
+        "vlog",
+        "anuong"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Đang ngồi nhậu tự nhiên nổi cơn muốn đi Vũng Tàu.#vungtau #phuot #reviewvungtau #phuotxemay #chuaquocankhaituong ",
+      "stats": {
+        "plays": 12930,
+        "likes": 213
+      },
+      "hashtags": [
+        "vungtau",
+        "phuot",
+        "reviewvungtau",
+        "phuotxemay",
+        "chuaquocankhaituong"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Phượt Sài Gòn Vũng Tàu buổi tối bằng Xe Máy 🏖️🏖️🏖️",
+      "stats": {
+        "plays": 958,
+        "likes": 14
+      },
+      "hashtags": [],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Đi Vũng Tàu mùa này kiểu.... con đường dài và đẹp nhất Vũng Tàu... báo hiệu đã đến Vũng Tàu #vungtau #fypシ #dulichvungtau #conduonghoagiay #checkinvungtau ",
+      "stats": {
+        "plays": 127,
+        "likes": 8
+      },
+      "hashtags": [
+        "vungtau",
+        "fypシ",
+        "dulichvungtau",
+        "conduonghoagiay",
+        "checkinvungtau"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "con đường"
+      ]
+    },
+    {
+      "description": "☘️ Con đường đi ra Vũng Tàu thật đẹp #shopatn #xuhuong #giaitri ",
+      "stats": {
+        "plays": 558,
+        "likes": 31
+      },
+      "hashtags": [
+        "shopatn",
+        "xuhuong",
+        "giaitri"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "con đường"
+      ]
+    },
+    {
+      "description": "#ad Du lịch và Điểm đến (Quảng trường Phước Hải) Trục đường ven biển đẹp thuộc BRVT (cũ). #quangtruongphuochai  #phuochaivungtau  #dulichvoisiunhop  #dulichtrainghiem      Phước Hải một xã ven biển (Đ",
+      "stats": {
+        "plays": 105,
+        "likes": 21
+      },
+      "hashtags": [
+        "quangtruongphuochai",
+        "phuochaivungtau",
+        "dulichvoisiunhop",
+        "dulichtrainghiem"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "đường ven biển",
+        "Phước Hải",
+        "con đường"
+      ]
+    },
+    {
+      "description": "#vungtau #xuhuong #ilovetiktok ",
+      "stats": {
+        "plays": 143,
+        "likes": 18
+      },
+      "hashtags": [
+        "vungtau",
+        "xuhuong",
+        "ilovetiktok"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "1 nơi rất đẹp nằm trên cung đường ven biển Vũng Tàu #phuot #dulich ",
+      "stats": {
+        "plays": 246034,
+        "likes": 10474
+      },
+      "hashtags": [
+        "phuot",
+        "dulich"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "đường ven biển",
+        "cung đường"
+      ]
+    },
+    {
+      "description": "Đường nay đẹp rồi nha mọi người ơi #xuhuong #vungtau ",
+      "stats": {
+        "plays": 1733,
+        "likes": 27
+      },
+      "hashtags": [
+        "xuhuong",
+        "vungtau"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Hành trình đi Vũng Tàu chỉ mất 2 tiếng, vừa khoẻ vừa chill của mình #CapCut #vungtau ",
+      "stats": {
+        "plays": 43014,
+        "likes": 571
+      },
+      "hashtags": [
+        "capcut",
+        "vungtau"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Một siêu phẩm ra mắt con đường đẹp nhất lúc này#deonuocngot #longhai #langchaiphuochai #vungtau #thodiathudaumot #canhdep #canhdepthiennhien #bariavungtau ",
+      "stats": {
+        "plays": 105916,
+        "likes": 2569
+      },
+      "hashtags": [
+        "deonuocngot",
+        "longhai",
+        "langchaiphuochai",
+        "vungtau",
+        "thodiathudaumot",
+        "canhdep",
+        "canhdepthiennhien",
+        "bariavungtau"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "con đường"
+      ]
+    },
+    {
+      "description": "Cung đường hoa giấy đẹp mê ngừoi giúp tâm trạng vui vẻ hơn nè#ngàylamviecvuive #NhiNhi ",
+      "stats": {
+        "plays": 376,
+        "likes": 11
+      },
+      "hashtags": [
+        "ngàylamviecvuive",
+        "nhinhi"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "cung đường"
+      ]
+    },
+    {
+      "description": "SIII 🪼🌊🐚🐋 không ngờ ngay ven biển Vũng Tàu lại có con hẻm có tiệm cà phê xinh & chill như này ý. #vungtau #cafevungtau #reviewcafe #siiigardencoffee #fypシ゚ ",
+      "stats": {
+        "plays": 191701,
+        "likes": 2731
+      },
+      "hashtags": [
+        "vungtau",
+        "cafevungtau",
+        "reviewcafe",
+        "siiigardencoffee",
+        "fypシ゚"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Đèo Nước Ngọt – cung đường ven biển đẹp nhất Vũng Tàu - Bình Châu?  Đèo Nước Ngọt – một đoạn trong tuyến ven biển đang được nâng cấp mở rộng. Hạ tầng thay đổi rất nhanh, và những cung đường đẹp như th",
+      "stats": {
+        "plays": 765,
+        "likes": 22
+      },
+      "hashtags": [
+        "hatangvenbien",
+        "deonuocngot",
+        "longhai",
+        "muikyvan",
+        "dt994"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "quốc lộ",
+        "đường ven biển",
+        "đèo",
+        "cung đường",
+        "tuyến đường",
+        "km",
+        "ngã ba"
+      ]
+    },
+    {
+      "description": "Đường Ven biển Hồ Tràm - Bình Châu nằm trong dự án nâng cấp mở rộng Đường Ven biển Vũng Tàu dài gần 77Km, tổng vốn đầu tư hơn 7.000 tỷ đồng 🇻🇳 #duongvenbien #hotram #binhchau #vungtau #lamkhanhtai ",
+      "stats": {
+        "plays": 32883,
+        "likes": 831
+      },
+      "hashtags": [
+        "duongvenbien",
+        "hotram",
+        "binhchau",
+        "vungtau",
+        "lamkhanhtai"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "đường ven biển",
+        "km"
+      ]
+    },
+    {
+      "description": "Tết này Bình Châu lại trở nên xinh đẹp hơn. Đường Ven Biển Vũng Tàu - Bình Châu quá ấn tượng, quá xịn #duongvenbienvungtaubinhchau #bienbinhchau #datbinhchau ",
+      "stats": {
+        "plays": 13092,
+        "likes": 245
+      },
+      "hashtags": [
+        "duongvenbienvungtaubinhchau",
+        "bienbinhchau",
+        "datbinhchau"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "đường ven biển"
+      ]
+    },
+    {
+      "description": "Đường Cát Trắng, cung đường ven biển siêu mê tại Hồ Cốc  ❤️🌊  #hotram #dulichvungtau #anchoivungtau #vungtau #dulichvietnam ",
+      "stats": {
+        "plays": 41683,
+        "likes": 1176
+      },
+      "hashtags": [
+        "hotram",
+        "dulichvungtau",
+        "anchoivungtau",
+        "vungtau",
+        "dulichvietnam"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "đường ven biển",
+        "cung đường"
+      ]
+    },
+    {
+      "description": "Cung đường đẹp ven biển Vũng Tàu, e nhận quay xe đi ngang cần alo em nhé #FlyVT #vungtau ",
+      "stats": {
+        "plays": 2419,
+        "likes": 69
+      },
+      "hashtags": [
+        "flyvt",
+        "vungtau"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "cung đường"
+      ]
+    },
+    {
+      "description": "Tọa lạc trên đường Quang Trung, một mặt nhìn ra biển, một mặt hướng vào thành phố, một đầu hướng về phía đường Hạ Long – con đường rất đẹp của thành phố biển Vũng Tàu, Công viên Bãi trước phần nào tô ",
+      "stats": {
+        "plays": 571,
+        "likes": 94
+      },
+      "hashtags": [
+        "vungtau",
+        "congvien",
+        "hoanghon",
+        "bien",
+        "canhdep"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "con đường",
+        "tuyến đường"
+      ]
+    },
+    {
+      "description": "Cung đường ven biển 'triệu đô' của Vũng Tàu sẽ đẹp như thế nào? #flycam #vungtau #reviewdulich #xuhuong #thaptamthang ",
+      "stats": {
+        "plays": 603,
+        "likes": 31
+      },
+      "hashtags": [
+        "flycam",
+        "vungtau",
+        "reviewdulich",
+        "xuhuong",
+        "thaptamthang"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "đường ven biển",
+        "cung đường"
+      ]
+    },
+    {
+      "description": "Những chuyến đi bất chợt luôn có điều thú vị bất ngờ. Không cần kế hoạch, cần những người anh em dám thử và người bạn Suzuki Jimny đủ mạnh để tự do khám phá. #Buuvivu #vungtau #SuzukiVietnam #Jimny #r",
+      "stats": {
+        "plays": 317339,
+        "likes": 1262
+      },
+      "hashtags": [
+        "buuvivu",
+        "vungtau",
+        "suzukivietnam",
+        "jimny",
+        "roadtrip"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "#roadtrip #vungtau ",
+      "stats": {
+        "plays": 113,
+        "likes": 6
+      },
+      "hashtags": [
+        "roadtrip",
+        "vungtau"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    },
+    {
+      "description": "Lịch trình Phước Hải trong ngày cho người thích đi phượt đây🥰 #langchaiphuochai #phuochai #reviewphuochai #phuochaivungtau #vungtau ",
+      "stats": {
+        "plays": 429360,
+        "likes": 6773
+      },
+      "hashtags": [
+        "langchaiphuochai",
+        "phuochai",
+        "reviewphuochai",
+        "phuochaivungtau",
+        "vungtau"
+      ],
+      "has_road_content": true,
+      "keywords_found": [
+        "Phước Hải"
+      ]
+    },
+    {
+      "description": "+1 lựa chọn khi đi du lịch muốn nhanh, riêng tư, an toàn, đưa đón tận nhà, thích hợp cho gia đình 4-7 người #vungtau #bayhaitravel #bayhaicar #vungtautrip #vungtaubeach ",
+      "stats": {
+        "plays": 737,
+        "likes": 47
+      },
+      "hashtags": [
+        "vungtau",
+        "bayhaitravel",
+        "bayhaicar",
+        "vungtautrip",
+        "vungtaubeach"
+      ],
+      "has_road_content": false,
+      "keywords_found": []
+    }
+  ]
+}

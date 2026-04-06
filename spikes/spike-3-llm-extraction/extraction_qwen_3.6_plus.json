@@ -1,0 +1,515 @@
+{
+  "corridor": "Saigon to Vung Tau",
+  "routes": [
+    {
+      "id": "route_1",
+      "name": "Quốc lộ 51 & Cao tốc Long Thành - Dầu Giây",
+      "description": "Tuyến đường chính và nhanh nhất từ Sài Gòn đi Vũng Tàu, kết hợp cao tốc và quốc lộ. Phù hợp cho xe ô tô và xe khách, thời gian di chuyển khoảng 2-2.5 giờ.",
+      "primary_road": "Quốc lộ 51",
+      "estimated_distance_km": 115,
+      "waypoints": [
+        {
+          "name": "TP. Hồ Chí Minh",
+          "name_en": "Ho Chi Minh City",
+          "lat": 10.7769,
+          "lng": 106.7009,
+          "type": "city",
+          "description": "Điểm xuất phát chính của hành trình.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Xa lộ Hà Nội",
+          "name_en": "Hanoi Highway",
+          "lat": 10.8,
+          "lng": 106.75,
+          "type": "landmark",
+          "description": "Tuyến đường huyết mạch nối trung tâm Sài Gòn ra cửa ngõ phía Đông.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Cầu Đồng Nai",
+          "name_en": "Dong Nai Bridge",
+          "lat": 10.81,
+          "lng": 106.85,
+          "type": "landmark",
+          "description": "Cây cầu lớn bắc qua sông Đồng Nai, đánh dấu ranh giới TP.HCM và Đồng Nai.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Ngã ba Vũng Tàu",
+          "name_en": "Vung Tau Intersection",
+          "lat": 10.82,
+          "lng": 106.9,
+          "type": "intersection",
+          "description": "Giao lộ quan trọng rẽ từ QL1A sang QL51 hướng về Vũng Tàu.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "TP. Bà Rịa",
+          "name_en": "Ba Ria City",
+          "lat": 10.505,
+          "lng": 107.175,
+          "type": "city",
+          "description": "Tỉnh lỵ tỉnh Bà Rịa - Vũng Tàu, nằm trên trục QL51.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "TP. Vũng Tàu",
+          "name_en": "Vung Tau City",
+          "lat": 10.345,
+          "lng": 107.084,
+          "type": "city",
+          "description": "Điểm đến cuối cùng, thành phố biển nổi tiếng.",
+          "sources": [
+            "web_search",
+            "tiktok",
+            "google_reviews"
+          ]
+        }
+      ],
+      "scenic_segments": [
+        {
+          "name": "Đoạn QL51 qua Bà Rịa",
+          "from_waypoint": "Ngã ba Vũng Tàu",
+          "to_waypoint": "TP. Bà Rịa",
+          "description": "Đoạn đường rộng rãi, có làn khẩn cấp, cảnh quan chuyển từ đô thị sang vùng ngoại ô xanh mát.",
+          "sources": [
+            "web_search",
+            "google_reviews"
+          ],
+          "corroborated": true
+        }
+      ]
+    },
+    {
+      "id": "route_2",
+      "name": "Đường Ven Biển Vũng Tàu - Bình Châu",
+      "description": "Tuyến đường du lịch ven biển dài gần 77km, nối các bãi biển và làng chài. Cảnh quan thiên nhiên hoang sơ, thích hợp cho phượt và ngắm cảnh.",
+      "primary_road": "Đường ven biển",
+      "estimated_distance_km": 130,
+      "waypoints": [
+        {
+          "name": "TP. Hồ Chí Minh",
+          "name_en": "Ho Chi Minh City",
+          "lat": 10.7769,
+          "lng": 106.7009,
+          "type": "city",
+          "description": "Điểm xuất phát chính của hành trình.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Hồ Tràm",
+          "name_en": "Ho Tram",
+          "lat": 10.48,
+          "lng": 107.25,
+          "type": "beach",
+          "description": "Khu nghỉ dưỡng và bãi biển dài, nước trong xanh.",
+          "sources": [
+            "tiktok"
+          ]
+        },
+        {
+          "name": "Hồ Cốc",
+          "name_en": "Ho Coc",
+          "lat": 10.45,
+          "lng": 107.3,
+          "type": "beach",
+          "description": "Bãi biển hoang sơ với đường Cát Trắng nổi tiếng.",
+          "sources": [
+            "tiktok"
+          ]
+        },
+        {
+          "name": "Bình Châu",
+          "name_en": "Binh Chau",
+          "lat": 10.41,
+          "lng": 107.38,
+          "type": "town",
+          "description": "Vùng đất cuối tuyến ven biển, nổi tiếng với suối nước nóng.",
+          "sources": [
+            "tiktok"
+          ]
+        },
+        {
+          "name": "Phước Hải",
+          "name_en": "Phuoc Hai",
+          "lat": 10.38,
+          "lng": 107.15,
+          "type": "town",
+          "description": "Làng chài ven biển yên bình, nổi tiếng với hải sản tươi sống.",
+          "sources": [
+            "tiktok",
+            "web_search"
+          ]
+        },
+        {
+          "name": "Long Hải",
+          "name_en": "Long Hai",
+          "lat": 10.39,
+          "lng": 107.13,
+          "type": "beach",
+          "description": "Bãi biển đẹp, ít đông đúc hơn Vũng Tàu, có chợ hải sản.",
+          "sources": [
+            "google_reviews",
+            "tiktok"
+          ]
+        },
+        {
+          "name": "TP. Vũng Tàu",
+          "name_en": "Vung Tau City",
+          "lat": 10.345,
+          "lng": 107.084,
+          "type": "city",
+          "description": "Điểm đến cuối cùng, thành phố biển nổi tiếng.",
+          "sources": [
+            "web_search",
+            "tiktok",
+            "google_reviews"
+          ]
+        }
+      ],
+      "scenic_segments": [
+        {
+          "name": "Đường ven biển Hồ Tràm - Bình Châu",
+          "from_waypoint": "Hồ Tràm",
+          "to_waypoint": "Bình Châu",
+          "description": "Tuyến đường ven biển đang được nâng cấp, cảnh quan biển xanh, cát trắng và rừng dương, rất thích hợp để chụp ảnh và thư giãn.",
+          "sources": [
+            "tiktok",
+            "web_search"
+          ],
+          "corroborated": true
+        },
+        {
+          "name": "Đèo Nước Ngọt",
+          "from_waypoint": "Bình Châu",
+          "to_waypoint": "Long Hải",
+          "description": "Đoạn đèo ven biển có view biển tuyệt đẹp, đang được mở rộng nhưng vẫn giữ được nét hoang sơ và chill.",
+          "sources": [
+            "tiktok",
+            "google_reviews"
+          ],
+          "corroborated": true
+        },
+        {
+          "name": "Cung đường ven biển Long Hải - Phước Hải",
+          "from_waypoint": "Long Hải",
+          "to_waypoint": "Phước Hải",
+          "description": "Trục đường ven biển đẹp, hai bên là làng chài và bãi biển, khung cảnh bình dị và xanh tươi.",
+          "sources": [
+            "tiktok",
+            "web_search"
+          ],
+          "corroborated": true
+        }
+      ]
+    },
+    {
+      "id": "route_3",
+      "name": "Tuyến Phà Cát Lái",
+      "description": "Lộ trình đi qua trung tâm Sài Gòn, hầm Thủ Thiêm và sang phà Cát Lái để nối vào QL51. Tránh được một số điểm kẹt xe nội thành.",
+      "primary_road": "Đại lộ Võ Văn Kiệt",
+      "estimated_distance_km": 118,
+      "waypoints": [
+        {
+          "name": "TP. Hồ Chí Minh",
+          "name_en": "Ho Chi Minh City",
+          "lat": 10.7769,
+          "lng": 106.7009,
+          "type": "city",
+          "description": "Điểm xuất phát chính của hành trình.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Đại lộ Võ Văn Kiệt",
+          "name_en": "Vo Van Kiet Boulevard",
+          "lat": 10.76,
+          "lng": 106.68,
+          "type": "landmark",
+          "description": "Đại lộ lớn chạy dọc kênh Bến Nghé, hướng về phía Đông.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Hầm Thủ Thiêm",
+          "name_en": "Thu Thiem Tunnel",
+          "lat": 10.775,
+          "lng": 106.72,
+          "type": "landmark",
+          "description": "Hầm vượt sông Sài Gòn, kết nối Quận 1 và TP. Thủ Đức.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Phà Cát Lái",
+          "name_en": "Cat Lai Ferry",
+          "lat": 10.78,
+          "lng": 106.78,
+          "type": "landmark",
+          "description": "Bến phà nối TP. Thủ Đức với huyện Nhơn Trạch, Đồng Nai.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "TP. Vũng Tàu",
+          "name_en": "Vung Tau City",
+          "lat": 10.345,
+          "lng": 107.084,
+          "type": "city",
+          "description": "Điểm đến cuối cùng, thành phố biển nổi tiếng.",
+          "sources": [
+            "web_search",
+            "tiktok",
+            "google_reviews"
+          ]
+        }
+      ],
+      "scenic_segments": [
+        {
+          "name": "Đoạn qua Hầm Thủ Thiêm",
+          "from_waypoint": "Đại lộ Võ Văn Kiệt",
+          "to_waypoint": "Hầm Thủ Thiêm",
+          "description": "Cung đường hiện đại với tầm nhìn ra sông Sài Gòn và skyline thành phố.",
+          "sources": [
+            "web_search"
+          ],
+          "corroborated": false
+        }
+      ]
+    },
+    {
+      "id": "route_4",
+      "name": "Đường tắt Long Sơn",
+      "description": "Lộ trình rẽ từ QL51 trước khi vào Vũng Tàu khoảng 27km để đi qua đảo Long Sơn, ngắm cảnh làng chài và núi Dinh.",
+      "primary_road": "Quốc lộ 51",
+      "estimated_distance_km": 125,
+      "waypoints": [
+        {
+          "name": "TP. Hồ Chí Minh",
+          "name_en": "Ho Chi Minh City",
+          "lat": 10.7769,
+          "lng": 106.7009,
+          "type": "city",
+          "description": "Điểm xuất phát chính của hành trình.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Ngã ba Vũng Tàu",
+          "name_en": "Vung Tau Intersection",
+          "lat": 10.82,
+          "lng": 106.9,
+          "type": "intersection",
+          "description": "Giao lộ quan trọng rẽ từ QL1A sang QL51 hướng về Vũng Tàu.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "Long Sơn",
+          "name_en": "Long Son",
+          "lat": 10.43,
+          "lng": 107.05,
+          "type": "town",
+          "description": "Hòn đảo nhỏ với làng chài, nhà thờ Núi Nhỏ và cảnh quan thiên nhiên đặc trưng.",
+          "sources": [
+            "web_search"
+          ]
+        },
+        {
+          "name": "TP. Vũng Tàu",
+          "name_en": "Vung Tau City",
+          "lat": 10.345,
+          "lng": 107.084,
+          "type": "city",
+          "description": "Điểm đến cuối cùng, thành phố biển nổi tiếng.",
+          "sources": [
+            "web_search",
+            "tiktok",
+            "google_reviews"
+          ]
+        }
+      ],
+      "scenic_segments": [
+        {
+          "name": "Đoạn đường qua Long Sơn",
+          "from_waypoint": "Ngã ba Vũng Tàu",
+          "to_waypoint": "Long Sơn",
+          "description": "Đường đi tắt vòng vèo nhưng khung cảnh bình dị, xanh tươi, gần gũi với làng chài và thiên nhiên.",
+          "sources": [
+            "web_search"
+          ],
+          "corroborated": false
+        }
+      ]
+    }
+  ],
+  "roads_mentioned": [
+    {
+      "name": "Quốc lộ 51",
+      "aliases": [
+        "QL51"
+      ],
+      "description": "Tuyến quốc lộ chính nối Đồng Nai với Bà Rịa - Vũng Tàu, có trạm thu phí và làn khẩn cấp.",
+      "sources": [
+        "web_search",
+        "tiktok",
+        "google_reviews"
+      ]
+    },
+    {
+      "name": "Cao tốc Long Thành - Dầu Giây",
+      "aliases": [
+        "CT.01",
+        "CT 29"
+      ],
+      "description": "Đường cao tốc nối TP.HCM với Đồng Nai, giúp rút ngắn thời gian di chuyển đáng kể.",
+      "sources": [
+        "web_search",
+        "google_reviews"
+      ]
+    },
+    {
+      "name": "Xa lộ Hà Nội",
+      "aliases": [
+        "QL1K"
+      ],
+      "description": "Tuyến đường huyết mạch phía Đông TP.HCM, nối trung tâm với cửa ngõ ra Đồng Nai.",
+      "sources": [
+        "web_search"
+      ]
+    },
+    {
+      "name": "Đại lộ Võ Văn Kiệt",
+      "aliases": [
+        "Đường Đông Tây"
+      ],
+      "description": "Đại lộ lớn chạy dọc kênh Bến Nghé, hướng về phía hầm Thủ Thiêm.",
+      "sources": [
+        "web_search"
+      ]
+    },
+    {
+      "name": "Đường ven biển Vũng Tàu - Bình Châu",
+      "aliases": [
+        "Đường ven biển"
+      ],
+      "description": "Tuyến đường du lịch dài gần 77km chạy dọc bờ biển, nối các bãi biển và khu du lịch.",
+      "sources": [
+        "tiktok",
+        "web_search"
+      ]
+    },
+    {
+      "name": "Quốc lộ 1A",
+      "aliases": [
+        "QL1A"
+      ],
+      "description": "Tuyến quốc lộ xuyên Việt, đoạn qua TP.HCM và Đồng Nai là lối vào chính của QL51.",
+      "sources": [
+        "web_search"
+      ]
+    },
+    {
+      "name": "Đường Điện Biên Phủ",
+      "aliases": [],
+      "description": "Tuyến đường nội thành Sài Gòn, lối ra phổ biến để vào Xa lộ Hà Nội.",
+      "sources": [
+        "web_search"
+      ]
+    },
+    {
+      "name": "Đường Quang Trung",
+      "aliases": [],
+      "description": "Tuyến đường ven biển chính tại TP. Vũng Tàu, chạy dọc Bãi Trước.",
+      "sources": [
+        "google_reviews"
+      ]
+    },
+    {
+      "name": "Đường Hạ Long",
+      "aliases": [],
+      "description": "Tuyến đường ven biển đẹp tại Vũng Tàu, nối Bãi Trước với các khu vực lân cận.",
+      "sources": [
+        "google_reviews"
+      ]
+    }
+  ],
+  "pois": [
+    {
+      "name": "1991's Coffee & Beer",
+      "lat": 10.35,
+      "lng": 107.08,
+      "type": "cafe",
+      "description": "Quán cà phê có view đẹp, giá hợp lý, thích hợp ngắm cảnh chiều tối.",
+      "sources": [
+        "google_reviews"
+      ]
+    },
+    {
+      "name": "Hải đăng Vũng Tàu",
+      "lat": 10.335,
+      "lng": 107.085,
+      "type": "viewpoint",
+      "description": "Ngọn hải đăng cổ kính, có lô cốt lịch sử và tầm nhìn bao quát thành phố biển.",
+      "sources": [
+        "google_reviews"
+      ]
+    },
+    {
+      "name": "Mũi Nghinh Phong",
+      "lat": 10.33,
+      "lng": 107.09,
+      "type": "viewpoint",
+      "description": "Mũi đất nhô ra biển, gần ngọn hải đăng, nơi chụp ảnh biển xanh và gió lộng.",
+      "sources": [
+        "google_reviews"
+      ]
+    },
+    {
+      "name": "Làng chài Phước Hải",
+      "lat": 10.38,
+      "lng": 107.15,
+      "type": "market",
+      "description": "Làng chài ven biển nổi tiếng với hải sản tươi sống và bánh căn nóng hổi.",
+      "sources": [
+        "web_search",
+        "tiktok"
+      ]
+    },
+    {
+      "name": "Núi Dinh",
+      "lat": 10.52,
+      "lng": 107.1,
+      "type": "viewpoint",
+      "description": "Ngọn núi cao khoảng 500m, lý tưởng cho trekking, chạy bộ và ngắm cảnh thiên nhiên hoang sơ.",
+      "sources": [
+        "google_reviews"
+      ]
+    }
+  ],
+  "source_summary": {
+    "web_search_findings": 15,
+    "tiktok_findings": 9,
+    "google_reviews_findings": 8,
+    "cross_source_corroborations": 4
+  }
+}

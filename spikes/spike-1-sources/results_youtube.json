@@ -1,0 +1,133 @@
+{
+  "source": "youtube_transcripts",
+  "timestamp": "2026-04-04T20:29:49.751768",
+  "total_videos_found": 19,
+  "videos_analyzed": 15,
+  "videos_with_transcripts": 0,
+  "videos_with_road_content": 0,
+  "actionable_ratio": 0.0,
+  "ip_blocked": true,
+  "pass": false,
+  "details": [
+    {
+      "video_id": "Rf5wj2ejj38",
+      "title": "Phượt Sài Gòn - Vũng Tàu Bằng Đường Phà Cần Giờ | Những Lưu Ý Khi Đi Cung Đường Này",
+      "url": "https://youtube.com/watch?v=Rf5wj2ejj38",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "BkZ0obrdKmA",
+      "title": "Đi phượt Vũng Tàu bằng xe máy | Ăn gì? Chơi gì? Mua hải sản ở đâu? | Vũng Tàu 2N1D | Vung Tau City",
+      "url": "https://youtube.com/watch?v=BkZ0obrdKmA",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "GWnyP5iTjF8",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=GWnyP5iTjF8",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "c42CTC0lZdQ",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=c42CTC0lZdQ",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "5OC1t90xi44",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=5OC1t90xi44",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "X70J0-E-G5Q",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=X70J0-E-G5Q",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "loQn8NiN3fU",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=loQn8NiN3fU",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "onWRFIK45ps",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=onWRFIK45ps",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "WpgbXs2a15s",
+      "title": "Đi thực tế 21km đường ven biển Vũng Tàu - Bình Châu",
+      "url": "https://youtube.com/watch?v=WpgbXs2a15s",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "SonvVyPh17I",
+      "title": "Phượt độc hành đường ven biển | Vũng Tàu - Phan Thiết | CB300R - Tour #1 • P.2",
+      "url": "https://youtube.com/watch?v=SonvVyPh17I",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "kasXck3lMEs",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=kasXck3lMEs",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "vWBZxdyJcws",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=vWBZxdyJcws",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "15THc5AT-00",
+      "title": "(title not extracted)",
+      "url": "https://youtube.com/watch?v=15THc5AT-00",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "CSZyAbwji-8",
+      "title": "YDL #310: Du lịch Vũng Tàu sáng đi chiều về, ăn hải sản tươi ngon & kem bơ sầu riêng | Yêu Máy Bay",
+      "url": "https://youtube.com/watch?v=CSZyAbwji-8",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    },
+    {
+      "video_id": "NS56bNbQGaQ",
+      "title": "Sài Gòn – Vũng Tàu – Phước Hải 1 Ngày: Đi Đâu, Ăn Gì? | Road Trip | Avanza Premio MT",
+      "url": "https://youtube.com/watch?v=NS56bNbQGaQ",
+      "has_transcript": false,
+      "has_road_content": false,
+      "skipped_reason": "ip_blocked"
+    }
+  ]
+}

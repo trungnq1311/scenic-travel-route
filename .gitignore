@@ -1,0 +1,114 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+bin
+dist
+tmp
+/out-tsc
+/media
+apps/axiom/media
+public/media/
+libs/db/.drizzle
+scaffold-examples/payload-cms-website/public/robots.txt
+scaffold-examples/payload-cms-website/public/sitemap*.xml
+
+# dependencies
+node_modules
+/node_modules
+
+# IDEs and editors
+/.idea/*
+!/.idea/runConfigurations
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+.eslintcache
+/.sass-cache
+/connect.lock
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+components.d.ts
+
+# System Files
+.DS_Store
+Thumbs.db
+
+.nx/cache
+.nx/workspace-data
+
+vite.config.*.timestamp*
+.vite-inspect
+.remote-assets
+
+# Remix
+.cache
+build
+public/build
+
+# Local Netlify folder
+.netlify
+deno.lock
+
+pgdata
+
+# Next.js
+.next
+out
+next-env.d.ts
+.react-email
+
+# generated content
+.contentlayer
+.content-collections
+.source
+
+# test & build
+/coverage
+/.next/
+/out/
+/build
+storybook-static
+build-storybook.log
+*.tsbuildinfo
+playwright-report
+lighthouse-report
+target
+
+# misc
+*.pem
+/.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/install-state.gz
+
+# others
+.env*.local
+.env
+.env.backup
+.vercel
+Pulumi.dev.yaml
+
+atac.log
+
+.agents
+.opencode
+.ruff_cache
+recovery-from-next
+openrouter key

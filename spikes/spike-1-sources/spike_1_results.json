@@ -1,0 +1,64 @@
+{
+  "spike": "spike_1_multi_source_content_quality",
+  "corridor": "Saigon -> Vung Tau",
+  "timestamp": "2026-04-04T20:30:39.390358",
+  "evaluation": {
+    "sources_tested": 4,
+    "sources_passed": 3,
+    "sources_skipped": 0,
+    "sources_failed_scraping": 0,
+    "source_verdicts": {
+      "web_search": "PASS",
+      "youtube": "FAIL",
+      "tiktok": "PASS",
+      "google_reviews": "PASS"
+    },
+    "overall_pass": true
+  },
+  "source_results": {
+    "web_search": {
+      "source": "web_search_tavily",
+      "timestamp": "2026-04-04T20:29:42.131695",
+      "total_queries": 10,
+      "queries_with_actionable_results": 10,
+      "total_results_found": 100,
+      "total_actionable_results": 74,
+      "total_commercial_results": 38,
+      "actionable_ratio": 0.74,
+      "pass": true
+    },
+    "youtube": {
+      "source": "youtube_transcripts",
+      "timestamp": "2026-04-04T20:29:49.751768",
+      "total_videos_found": 19,
+      "videos_analyzed": 15,
+      "videos_with_transcripts": 0,
+      "videos_with_road_content": 0,
+      "actionable_ratio": 0.0,
+      "ip_blocked": true,
+      "pass": false
+    },
+    "tiktok": {
+      "source": "tiktok_ensembledata",
+      "timestamp": "2026-04-04T20:30:27.575604",
+      "scraping_failed": false,
+      "total_descriptions_found": 43,
+      "descriptions_analyzed": 30,
+      "descriptions_with_road_content": 16,
+      "actionable_ratio": 0.5333333333333333,
+      "pass": true,
+      "note": null
+    },
+    "google_reviews": {
+      "source": "google_maps_reviews",
+      "timestamp": "2026-04-04T20:30:39.390309",
+      "places_searched": 20,
+      "total_reviews_collected": 96,
+      "reviews_analyzed": 92,
+      "reviews_with_road_content": 18,
+      "reviews_mentioning_driving": 22,
+      "actionable_ratio": 0.1956521739130435,
+      "pass": true
+    }
+  }
+}
