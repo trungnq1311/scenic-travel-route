@@ -131,19 +131,21 @@ describe('trip brief store', () => {
       routesSnapshot,
     });
 
-    await castTripBriefVote({
+    const first = await castTripBriefVote({
       briefId: brief.briefId,
       voterToken: token,
       routeId: 'route_a',
       idempotencyKey: 'same-key',
     });
+    expect(first.mutationApplied).toBe(true);
 
-    await castTripBriefVote({
+    const second = await castTripBriefVote({
       briefId: brief.briefId,
       voterToken: token,
       routeId: 'baseline',
       idempotencyKey: 'same-key',
     });
+    expect(second.mutationApplied).toBe(false);
 
     const view = await getTripBriefView(brief.briefId, token);
     expect(view.userVoteRouteId).toBe('route_a');
@@ -205,12 +207,36 @@ describe('trip brief store', () => {
     });
 
     const locked = await lockTripBriefDecision({ briefId: brief.briefId, voterToken: token });
-    expect(locked.readOnly).toBe(true);
-    expect(locked.brief.winningRouteId).toBe('route_a');
-    expect(locked.canUnlock).toBe(true);
+    expect(locked.lockApplied).toBe(true);
+    expect(locked.view.readOnly).toBe(true);
+    expect(locked.view.brief.winningRouteId).toBe('route_a');
+    expect(locked.view.canUnlock).toBe(true);
 
     const unlocked = await unlockTripBriefDecision({ briefId: brief.briefId, voterToken: token });
     expect(unlocked.brief.decisionLockedAt).toBeNull();
     expect(unlocked.readOnly).toBe(false);
+  });
+
+  test('does not report lock applied when already locked', async () => {
+    const token = issueVoterToken();
+    const brief = await createTripBrief({
+      tripId: 'trip-1',
+      origin: 'HCM',
+      destination: 'VT',
+      routesSnapshot,
+    });
+
+    await castTripBriefVote({
+      briefId: brief.briefId,
+      voterToken: token,
+      routeId: 'route_a',
+      idempotencyKey: 'vote-1',
+    });
+
+    const firstLock = await lockTripBriefDecision({ briefId: brief.briefId, voterToken: token });
+    expect(firstLock.lockApplied).toBe(true);
+
+    const replayLock = await lockTripBriefDecision({ briefId: brief.briefId, voterToken: token });
+    expect(replayLock.lockApplied).toBe(false);
   });
 });

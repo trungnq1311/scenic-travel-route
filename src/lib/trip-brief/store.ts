@@ -51,6 +51,10 @@ interface MutationRow {
   idempotency_key: string;
 }
 
+interface ExistingMutationRow {
+  voter_token_hash: string;
+}
+
 interface DecisionRow {
   winner_route_id: string;
   total_votes: string;
@@ -157,7 +161,12 @@ function computeReadOnly(brief: TripBrief): boolean {
   return new Date(brief.expiresAt).getTime() <= Date.now() || brief.status === 'expired';
 }
 
-async function fetchBrief(client: PoolClient, briefId: string): Promise<TripBrief> {
+async function fetchBrief(
+  client: PoolClient,
+  briefId: string,
+  options?: { forUpdate?: boolean },
+): Promise<TripBrief> {
+  const lockClause = options?.forUpdate ? 'FOR UPDATE' : '';
   const result = await client.query<TripBriefRow>(
     `
       SELECT
@@ -174,7 +183,7 @@ async function fetchBrief(client: PoolClient, briefId: string): Promise<TripBrie
         winning_route_id
       FROM trip_briefs
       WHERE brief_id = $1
-      FOR UPDATE
+      ${lockClause}
     `,
     [briefId],
   );
@@ -432,7 +441,7 @@ export async function castTripBriefVote(input: {
   voterToken: string;
   routeId: string;
   idempotencyKey: string;
-}): Promise<TripBriefView> {
+}): Promise<{ view: TripBriefView; mutationApplied: boolean }> {
   if (!isDatabaseConfigured()) {
     return castTripBriefVoteMemory(input);
   }
@@ -446,7 +455,7 @@ export async function castTripBriefVote(input: {
 
     await client.query('BEGIN');
     try {
-      const brief = await fetchBrief(client, input.briefId);
+      const brief = await fetchBrief(client, input.briefId, { forUpdate: true });
       const readOnly = computeReadOnly(brief);
       if (readOnly) {
         if (brief.status === 'expired') {
@@ -475,7 +484,49 @@ export async function castTripBriefVote(input: {
         [scopeIdempotencyKey(input.briefId, input.idempotencyKey), input.briefId, tokenHash, input.routeId, nowIso()],
       );
 
-      if (hasRows(mutationInsert.rowCount, mutationInsert.rows.length)) {
+      let mutationApplied = hasRows(mutationInsert.rowCount, mutationInsert.rows.length);
+
+      if (!mutationApplied) {
+        const existingMutation = await client.query<ExistingMutationRow>(
+          `
+            SELECT voter_token_hash
+            FROM trip_brief_vote_mutations
+            WHERE brief_id = $1 AND idempotency_key = $2
+            LIMIT 1
+          `,
+          [input.briefId, scopeIdempotencyKey(input.briefId, input.idempotencyKey)],
+        );
+
+        if (
+          hasRows(existingMutation.rowCount, existingMutation.rows.length) &&
+          existingMutation.rows[0].voter_token_hash === tokenHash
+        ) {
+          mutationApplied = false;
+        } else {
+          await client.query(
+            `
+              INSERT INTO trip_brief_vote_mutations (
+                idempotency_key,
+                brief_id,
+                voter_token_hash,
+                route_id,
+                processed_at
+              ) VALUES ($1, $2, $3, $4, $5)
+              ON CONFLICT DO NOTHING
+            `,
+            [
+              scopeIdempotencyKey(input.briefId, input.idempotencyKey),
+              input.briefId,
+              tokenHash,
+              input.routeId,
+              nowIso(),
+            ],
+          );
+          mutationApplied = true;
+        }
+      }
+
+      if (mutationApplied) {
         await client.query(
           `
             INSERT INTO trip_brief_votes (
@@ -495,7 +546,10 @@ export async function castTripBriefVote(input: {
 
       const view = await buildTripBriefView(client, input.briefId, input.voterToken);
       await client.query('COMMIT');
-      return view;
+      return {
+        view,
+        mutationApplied,
+      };
     } catch (error) {
       await client.query('ROLLBACK');
       throw error;
@@ -506,7 +560,7 @@ export async function castTripBriefVote(input: {
 export async function lockTripBriefDecision(input: {
   briefId: string;
   voterToken: string;
-}): Promise<TripBriefView> {
+}): Promise<{ view: TripBriefView; lockApplied: boolean }> {
   if (!isDatabaseConfigured()) {
     return lockTripBriefDecisionMemory(input);
   }
@@ -520,7 +574,7 @@ export async function lockTripBriefDecision(input: {
 
     await client.query('BEGIN');
     try {
-      const brief = await fetchBrief(client, input.briefId);
+      const brief = await fetchBrief(client, input.briefId, { forUpdate: true });
 
       if (brief.status === 'expired') {
         throw new Error('trip brief expired');
@@ -529,7 +583,7 @@ export async function lockTripBriefDecision(input: {
       if (brief.decisionLockedAt) {
         const view = await buildTripBriefView(client, input.briefId, input.voterToken);
         await client.query('COMMIT');
-        return view;
+        return { view, lockApplied: false };
       }
 
       const decision = await client.query<DecisionRow>(
@@ -564,12 +618,12 @@ export async function lockTripBriefDecision(input: {
       if (!hasRows(lockResult.rowCount, 0)) {
         const view = await buildTripBriefView(client, input.briefId, input.voterToken);
         await client.query('COMMIT');
-        return view;
+        return { view, lockApplied: false };
       }
 
       const view = await buildTripBriefView(client, input.briefId, input.voterToken);
       await client.query('COMMIT');
-      return view;
+      return { view, lockApplied: true };
     } catch (error) {
       await client.query('ROLLBACK');
       throw error;
@@ -594,7 +648,7 @@ export async function unlockTripBriefDecision(input: {
 
     await client.query('BEGIN');
     try {
-      const brief = await fetchBrief(client, input.briefId);
+      const brief = await fetchBrief(client, input.briefId, { forUpdate: true });
 
       if (!brief.decisionLockedAt) {
         const view = await buildTripBriefView(client, input.briefId, input.voterToken);

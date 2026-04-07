@@ -1,10 +1,11 @@
-import { checkRateLimit, extractClientIp } from '../rate-limit';
+import { checkRateLimit, extractClientIp, resetRateLimitStore } from '../rate-limit';
 
 describe('checkRateLimit', () => {
   const originalTrustProxyHeaders = process.env.TRUST_PROXY_HEADERS;
 
   beforeEach(() => {
     delete process.env.TRUST_PROXY_HEADERS;
+    resetRateLimitStore();
   });
 
   afterAll(() => {
@@ -43,7 +44,7 @@ describe('checkRateLimit', () => {
       headers: { 'x-forwarded-for': '1.1.1.1' },
     });
 
-    expect(extractClientIp(request)).toBe('unknown');
+    expect(extractClientIp(request)).toMatch(/^fingerprint:/);
   });
 
   test('does not trust x-forwarded-for even when proxy headers are enabled', () => {
@@ -52,7 +53,7 @@ describe('checkRateLimit', () => {
       headers: { 'x-forwarded-for': '1.1.1.1, 10.0.0.8' },
     });
 
-    expect(extractClientIp(request)).toBe('unknown');
+    expect(extractClientIp(request)).toMatch(/^fingerprint:/);
   });
 
   test('prefers trusted provider headers over forwarded chain', () => {
@@ -65,5 +66,27 @@ describe('checkRateLimit', () => {
     });
 
     expect(extractClientIp(request)).toBe('203.0.113.9');
+  });
+
+  test('falls back to deterministic fingerprint when trusted IP header missing', () => {
+    process.env.TRUST_PROXY_HEADERS = 'true';
+    const requestA = new Request('http://localhost', {
+      headers: {
+        'user-agent': 'Playwright/1.0',
+        'accept-language': 'en-US',
+      },
+    });
+    const requestB = new Request('http://localhost', {
+      headers: {
+        'user-agent': 'Playwright/1.0',
+        'accept-language': 'en-US',
+      },
+    });
+
+    const keyA = extractClientIp(requestA);
+    const keyB = extractClientIp(requestB);
+
+    expect(keyA).toMatch(/^fingerprint:/);
+    expect(keyA).toBe(keyB);
   });
 });

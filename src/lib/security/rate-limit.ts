@@ -1,3 +1,5 @@
+import { createHash } from 'crypto';
+
 interface RateLimitEntry {
   count: number;
   resetAt: number;
@@ -20,6 +22,10 @@ export interface RateLimitResult {
 }
 
 const store = new Map<string, RateLimitEntry>();
+
+export function resetRateLimitStore(): void {
+  store.clear();
+}
 
 function pruneExpired(now: number): void {
   for (const [key, entry] of store.entries()) {
@@ -58,9 +64,25 @@ function fromHeader(request: Request, headerName: string): string | null {
   return normalizeIp(firstValue);
 }
 
+function buildClientFingerprint(request: Request): string {
+  const fingerprintSeed = [
+    request.headers.get('user-agent')?.trim() ?? '',
+    request.headers.get('accept-language')?.trim() ?? '',
+    request.headers.get('sec-ch-ua')?.trim() ?? '',
+    request.headers.get('sec-ch-ua-platform')?.trim() ?? '',
+  ].join('|');
+
+  if (!fingerprintSeed.replace(/\|/g, '')) {
+    return 'fingerprint:anonymous';
+  }
+
+  const digest = createHash('sha256').update(fingerprintSeed).digest('hex').slice(0, 16);
+  return `fingerprint:${digest}`;
+}
+
 export function extractClientIp(request: Request): string {
   if (process.env.TRUST_PROXY_HEADERS !== 'true') {
-    return 'unknown';
+    return buildClientFingerprint(request);
   }
 
   const trustedHeaderIp =
@@ -70,7 +92,7 @@ export function extractClientIp(request: Request): string {
 
   if (trustedHeaderIp) return trustedHeaderIp;
 
-  return 'unknown';
+  return buildClientFingerprint(request);
 }
 
 export function checkRateLimit(config: RateLimitConfig): RateLimitResult {

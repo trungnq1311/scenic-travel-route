@@ -55,26 +55,28 @@ export async function POST(request: Request, context: { params: Promise<{ briefI
 
     const previousView = await getTripBriefView(briefId, voterToken);
 
-    const view = await castTripBriefVote({
+    const voteResult = await castTripBriefVote({
       briefId,
       voterToken,
       routeId: validation.value.routeId,
       idempotencyKey: resolveIdempotencyKey(validation.value.idempotencyKey),
     });
 
-    emitTripBriefEvent({
-      event: 'trip_vote_cast',
-      payload: {
-        briefId,
-        routeId: validation.value.routeId,
-        castAt: new Date().toISOString(),
-        isRevote:
-          previousView.userVoteRouteId !== null &&
-          previousView.userVoteRouteId !== validation.value.routeId,
-      },
-    });
+    if (voteResult.mutationApplied) {
+      emitTripBriefEvent({
+        event: 'trip_vote_cast',
+        payload: {
+          briefId,
+          routeId: validation.value.routeId,
+          castAt: new Date().toISOString(),
+          isRevote:
+            previousView.userVoteRouteId !== null &&
+            previousView.userVoteRouteId !== validation.value.routeId,
+        },
+      });
+    }
 
-    const response = NextResponse.json(view, {
+    const response = NextResponse.json(voteResult.view, {
       headers: {
         'X-RateLimit-Limit': String(rateLimit.limit),
         'X-RateLimit-Remaining': String(rateLimit.remaining),

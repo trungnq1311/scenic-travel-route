@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS trip_brief_vote_mutations (
   voter_token_hash TEXT NOT NULL,
   route_id TEXT NOT NULL,
   processed_at TIMESTAMPTZ NOT NULL,
-  PRIMARY KEY (brief_id, idempotency_key)
+  PRIMARY KEY (brief_id, voter_token_hash, idempotency_key)
 );
 
 CREATE INDEX IF NOT EXISTS idx_trip_brief_vote_mutations_brief

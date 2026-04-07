@@ -40,19 +40,21 @@ export async function POST(request: Request, context: { params: Promise<{ briefI
       voterToken = issueVoterToken();
     }
 
-    const view = await lockTripBriefDecision({ briefId, voterToken });
+    const lockResult = await lockTripBriefDecision({ briefId, voterToken });
 
-    emitTripBriefEvent({
-      event: 'trip_decision_locked',
-      payload: {
-        briefId,
-        winningRouteId: view.brief.winningRouteId,
-        lockAt: view.brief.decisionLockedAt,
-        voterCount: view.voteSummary.totalVotes,
-      },
-    });
+    if (lockResult.lockApplied) {
+      emitTripBriefEvent({
+        event: 'trip_decision_locked',
+        payload: {
+          briefId,
+          winningRouteId: lockResult.view.brief.winningRouteId,
+          lockAt: lockResult.view.brief.decisionLockedAt,
+          voterCount: lockResult.view.voteSummary.totalVotes,
+        },
+      });
+    }
 
-    const response = NextResponse.json(view, {
+    const response = NextResponse.json(lockResult.view, {
       headers: {
         'X-RateLimit-Limit': String(rateLimit.limit),
         'X-RateLimit-Remaining': String(rateLimit.remaining),

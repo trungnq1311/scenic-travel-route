@@ -20,6 +20,7 @@ interface StoredBrief {
   brief: TripBrief;
   votesByTokenHash: Map<string, StoredVote>;
   idempotencyKeys: Set<string>;
+  voteMutationKeysByTokenHash: Map<string, Set<string>>;
 }
 
 const briefStore = new Map<string, StoredBrief>();
@@ -160,6 +161,7 @@ export async function createTripBriefMemory(input: {
     brief,
     votesByTokenHash: new Map(),
     idempotencyKeys: new Set(),
+    voteMutationKeysByTokenHash: new Map(),
   });
 
   return brief;
@@ -219,15 +221,21 @@ export async function castTripBriefVoteMemory(input: {
   voterToken: string;
   routeId: string;
   idempotencyKey: string;
-}): Promise<TripBriefView> {
+}): Promise<{ view: TripBriefView; mutationApplied: boolean }> {
   if (!verifyVoterTokenMemory(input.voterToken)) {
     throw new Error('invalid voter token');
   }
 
   const stored = getStoredOrThrow(input.briefId);
 
-  if (stored.idempotencyKeys.has(input.idempotencyKey)) {
-    return getTripBriefViewMemory(input.briefId, input.voterToken);
+  const tokenHash = hashToken(input.voterToken);
+  const tokenMutationKeys = stored.voteMutationKeysByTokenHash.get(tokenHash);
+
+  if (tokenMutationKeys?.has(input.idempotencyKey)) {
+    return {
+      view: await getTripBriefViewMemory(input.briefId, input.voterToken),
+      mutationApplied: false,
+    };
   }
 
   if (isExpired(stored.brief)) {
@@ -244,20 +252,28 @@ export async function castTripBriefVoteMemory(input: {
     throw new Error('unknown route');
   }
 
-  const tokenHash = hashToken(input.voterToken);
   stored.votesByTokenHash.set(tokenHash, {
     routeId: input.routeId,
     updatedAt: nowIso(),
   });
   stored.idempotencyKeys.add(input.idempotencyKey);
 
-  return getTripBriefViewMemory(input.briefId, input.voterToken);
+  if (!tokenMutationKeys) {
+    stored.voteMutationKeysByTokenHash.set(tokenHash, new Set([input.idempotencyKey]));
+  } else {
+    tokenMutationKeys.add(input.idempotencyKey);
+  }
+
+  return {
+    view: await getTripBriefViewMemory(input.briefId, input.voterToken),
+    mutationApplied: true,
+  };
 }
 
 export async function lockTripBriefDecisionMemory(input: {
   briefId: string;
   voterToken: string;
-}): Promise<TripBriefView> {
+}): Promise<{ view: TripBriefView; lockApplied: boolean }> {
   if (!verifyVoterTokenMemory(input.voterToken)) {
     throw new Error('invalid voter token');
   }
@@ -268,7 +284,10 @@ export async function lockTripBriefDecisionMemory(input: {
     throw new Error('trip brief expired');
   }
   if (isLocked(stored.brief)) {
-    return getTripBriefViewMemory(input.briefId, input.voterToken);
+    return {
+      view: await getTripBriefViewMemory(input.briefId, input.voterToken),
+      lockApplied: false,
+    };
   }
 
   const summary = summarizeVotes(stored.votesByTokenHash);
@@ -281,7 +300,10 @@ export async function lockTripBriefDecisionMemory(input: {
   stored.brief.lockedByTokenHash = tokenHash;
   stored.brief.winningRouteId = summary.winnerRouteId;
 
-  return getTripBriefViewMemory(input.briefId, input.voterToken);
+  return {
+    view: await getTripBriefViewMemory(input.briefId, input.voterToken),
+    lockApplied: true,
+  };
 }
 
 export async function unlockTripBriefDecisionMemory(input: {

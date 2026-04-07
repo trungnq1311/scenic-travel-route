@@ -2,7 +2,9 @@ import { POST as createTripBrief } from '@/app/api/trip-brief/route';
 import { GET as getTripBriefSummary } from '@/app/api/trip-brief/[briefId]/summary/route';
 import { POST as castVote } from '@/app/api/trip-brief/[briefId]/vote/route';
 import { DELETE as unlockDecision, POST as lockDecision } from '@/app/api/trip-brief/[briefId]/lock/route';
+import { resetRateLimitStore } from '@/lib/security/rate-limit';
 import { resetTripBriefStore } from '@/lib/trip-brief/store';
+import * as tripBriefEvents from '@/lib/trip-brief/events';
 
 function createPayload() {
   return {
@@ -83,8 +85,106 @@ describe('trip brief API integration', () => {
 
   beforeEach(async () => {
     await resetTripBriefStore();
+    resetRateLimitStore();
     jest.restoreAllMocks();
     jest.useRealTimers();
+  });
+
+  test('does not emit vote event on idempotent replay', async () => {
+    const emitSpy = jest.spyOn(tripBriefEvents, 'emitTripBriefEvent').mockImplementation(() => undefined);
+
+    const createResponse = await createTripBrief(
+      new Request('http://localhost:3000/api/trip-brief', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(createPayload()),
+      }),
+    );
+
+    const created = await createResponse.json();
+    const briefId = created.brief.briefId as string;
+    const cookie = cookieValueFromSetCookie(createResponse.headers.get('set-cookie'));
+
+    await castVote(
+      new Request(`http://localhost:3000/api/trip-brief/${briefId}/vote`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          cookie,
+        },
+        body: JSON.stringify({ routeId: 'route_a', idempotencyKey: 'same-key' }),
+      }),
+      briefContext(briefId),
+    );
+
+    const callsAfterFirstVote = emitSpy.mock.calls.length;
+
+    await castVote(
+      new Request(`http://localhost:3000/api/trip-brief/${briefId}/vote`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          cookie,
+        },
+        body: JSON.stringify({ routeId: 'baseline', idempotencyKey: 'same-key' }),
+      }),
+      briefContext(briefId),
+    );
+
+    expect(emitSpy.mock.calls.length).toBe(callsAfterFirstVote);
+  });
+
+  test('does not emit lock event when lock is already in effect', async () => {
+    const emitSpy = jest.spyOn(tripBriefEvents, 'emitTripBriefEvent').mockImplementation(() => undefined);
+
+    const createResponse = await createTripBrief(
+      new Request('http://localhost:3000/api/trip-brief', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(createPayload()),
+      }),
+    );
+    const created = await createResponse.json();
+    const briefId = created.brief.briefId as string;
+    const cookie = cookieValueFromSetCookie(createResponse.headers.get('set-cookie'));
+
+    await castVote(
+      new Request(`http://localhost:3000/api/trip-brief/${briefId}/vote`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          cookie,
+        },
+        body: JSON.stringify({ routeId: 'route_a', idempotencyKey: 'vote-key' }),
+      }),
+      briefContext(briefId),
+    );
+
+    await lockDecision(
+      new Request(`http://localhost:3000/api/trip-brief/${briefId}/lock`, {
+        method: 'POST',
+        headers: { cookie },
+      }),
+      briefContext(briefId),
+    );
+
+    const lockEventsAfterFirstLock = emitSpy.mock.calls.filter(
+      (call) => call[0]?.event === 'trip_decision_locked',
+    ).length;
+
+    await lockDecision(
+      new Request(`http://localhost:3000/api/trip-brief/${briefId}/lock`, {
+        method: 'POST',
+        headers: { cookie },
+      }),
+      briefContext(briefId),
+    );
+
+    const lockEventsAfterReplay = emitSpy.mock.calls.filter(
+      (call) => call[0]?.event === 'trip_decision_locked',
+    ).length;
+
+    expect(lockEventsAfterReplay).toBe(lockEventsAfterFirstLock);
   });
 
   test('keeps vote idempotent for repeated idempotency key', async () => {
