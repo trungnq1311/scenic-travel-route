@@ -2,6 +2,8 @@
 
 # compiled output
 bin
+!bin/
+!bin/test-lane
 dist
 tmp
 /out-tsc
@@ -86,6 +88,7 @@ storybook-static
 build-storybook.log
 *.tsbuildinfo
 playwright-report
+test-results
 lighthouse-report
 target
 
@@ -110,5 +113,8 @@ atac.log
 .agents
 .opencode
 .ruff_cache
+.gstack
 recovery-from-next
 openrouter key
+test-results
+CLAUDE.md

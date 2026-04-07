@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Project-standard lane test entrypoint for /ship automation.
+# In this Next.js repo, lane tests map to Playwright E2E checks.
+npm run test:e2e -- "$@"

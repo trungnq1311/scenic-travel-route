@@ -1,6 +1,17 @@
-import { checkRateLimit } from '../rate-limit';
+import { checkRateLimit, extractClientIp, resetRateLimitStore } from '../rate-limit';
 
 describe('checkRateLimit', () => {
+  const originalTrustProxyHeaders = process.env.TRUST_PROXY_HEADERS;
+
+  beforeEach(() => {
+    delete process.env.TRUST_PROXY_HEADERS;
+    resetRateLimitStore();
+  });
+
+  afterAll(() => {
+    process.env.TRUST_PROXY_HEADERS = originalTrustProxyHeaders;
+  });
+
   test('allows requests under limit then blocks', () => {
     const key = `test-limit-${Date.now()}`;
 
@@ -26,5 +37,56 @@ describe('checkRateLimit', () => {
     expect(a1.allowed).toBe(true);
     expect(a2.allowed).toBe(false);
     expect(b1.allowed).toBe(true);
+  });
+
+  test('ignores proxy headers unless explicitly trusted', () => {
+    const request = new Request('http://localhost', {
+      headers: { 'x-forwarded-for': '1.1.1.1' },
+    });
+
+    expect(extractClientIp(request)).toMatch(/^fingerprint:/);
+  });
+
+  test('does not trust x-forwarded-for even when proxy headers are enabled', () => {
+    process.env.TRUST_PROXY_HEADERS = 'true';
+    const request = new Request('http://localhost', {
+      headers: { 'x-forwarded-for': '1.1.1.1, 10.0.0.8' },
+    });
+
+    expect(extractClientIp(request)).toMatch(/^fingerprint:/);
+  });
+
+  test('prefers trusted provider headers over forwarded chain', () => {
+    process.env.TRUST_PROXY_HEADERS = 'true';
+    const request = new Request('http://localhost', {
+      headers: {
+        'x-forwarded-for': '1.1.1.1, 10.0.0.8',
+        'x-vercel-forwarded-for': '203.0.113.9',
+      },
+    });
+
+    expect(extractClientIp(request)).toBe('203.0.113.9');
+  });
+
+  test('falls back to deterministic fingerprint when trusted IP header missing', () => {
+    process.env.TRUST_PROXY_HEADERS = 'true';
+    const requestA = new Request('http://localhost', {
+      headers: {
+        'user-agent': 'Playwright/1.0',
+        'accept-language': 'en-US',
+      },
+    });
+    const requestB = new Request('http://localhost', {
+      headers: {
+        'user-agent': 'Playwright/1.0',
+        'accept-language': 'en-US',
+      },
+    });
+
+    const keyA = extractClientIp(requestA);
+    const keyB = extractClientIp(requestB);
+
+    expect(keyA).toMatch(/^fingerprint:/);
+    expect(keyA).toBe(keyB);
   });
 });

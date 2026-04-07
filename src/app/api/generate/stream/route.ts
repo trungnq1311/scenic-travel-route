@@ -8,6 +8,20 @@ export const maxDuration = 300;
 const RATE_LIMIT_MAX_REQUESTS = 3;
 const RATE_LIMIT_WINDOW_MS = 60_000;
 
+export function enqueueSseEvent(
+  controller: ReadableStreamDefaultController<Uint8Array>,
+  encoder: TextEncoder,
+  event: string,
+  data: unknown,
+): boolean {
+  try {
+    controller.enqueue(encoder.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const rawRequest: GenerateRequest = {
@@ -53,10 +67,18 @@ export async function GET(request: Request) {
   const req: GenerateRequest = validation.value;
 
   const encoder = new TextEncoder();
+  let streamClosed = false;
   const stream = new ReadableStream({
     async start(controller) {
       const sendEvent = (event: string, data: unknown) => {
-        controller.enqueue(encoder.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`));
+        if (streamClosed) {
+          return;
+        }
+
+        const sent = enqueueSseEvent(controller, encoder, event, data);
+        if (!sent) {
+          streamClosed = true;
+        }
       };
 
       try {
@@ -77,13 +99,25 @@ export async function GET(request: Request) {
       } catch (error) {
         const requestId = crypto.randomUUID();
         console.error(`[generate:stream] Request failed (${requestId}):`, error);
-        sendEvent('error', {
-          message: 'Route generation failed. Please try again.',
-          requestId,
-        });
+        if (!streamClosed) {
+          sendEvent('error', {
+            message: 'Route generation failed. Please try again.',
+            requestId,
+          });
+        }
       } finally {
-        controller.close();
+        if (!streamClosed) {
+          try {
+            controller.close();
+          } catch {
+            // Stream may already be closed if client disconnected.
+          }
+          streamClosed = true;
+        }
       }
+    },
+    cancel() {
+      streamClosed = true;
     },
   });
 
