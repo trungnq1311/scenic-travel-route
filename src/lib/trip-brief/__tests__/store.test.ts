@@ -150,6 +150,44 @@ describe('trip brief store', () => {
     expect(view.voteSummary.totalVotes).toBe(1);
   });
 
+  test('applies idempotency key per brief scope', async () => {
+    const token = issueVoterToken();
+    const briefA = await createTripBrief({
+      tripId: 'trip-a',
+      origin: 'HCM',
+      destination: 'VT',
+      routesSnapshot,
+    });
+    const briefB = await createTripBrief({
+      tripId: 'trip-b',
+      origin: 'HCM',
+      destination: 'Dalat',
+      routesSnapshot,
+    });
+
+    await castTripBriefVote({
+      briefId: briefA.briefId,
+      voterToken: token,
+      routeId: 'route_a',
+      idempotencyKey: 'cross-brief-key',
+    });
+
+    await castTripBriefVote({
+      briefId: briefB.briefId,
+      voterToken: token,
+      routeId: 'baseline',
+      idempotencyKey: 'cross-brief-key',
+    });
+
+    const viewA = await getTripBriefView(briefA.briefId, token);
+    const viewB = await getTripBriefView(briefB.briefId, token);
+
+    expect(viewA.userVoteRouteId).toBe('route_a');
+    expect(viewB.userVoteRouteId).toBe('baseline');
+    expect(viewA.voteSummary.totalVotes).toBe(1);
+    expect(viewB.voteSummary.totalVotes).toBe(1);
+  });
+
   test('locks and unlocks decision within undo window', async () => {
     const token = issueVoterToken();
     const brief = await createTripBrief({

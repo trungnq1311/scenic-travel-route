@@ -145,6 +145,63 @@ describe('trip brief API integration', () => {
     expect(summary.voteSummary.countsByRouteId.baseline).toBeUndefined();
   });
 
+  test('allows same idempotency key on different briefs', async () => {
+    const createResponseA = await createTripBrief(
+      new Request('http://localhost:3000/api/trip-brief', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(createPayload()),
+      }),
+    );
+    const createdA = await createResponseA.json();
+    const briefIdA = createdA.brief.briefId as string;
+    const cookieA = cookieValueFromSetCookie(createResponseA.headers.get('set-cookie'));
+
+    const createResponseB = await createTripBrief(
+      new Request('http://localhost:3000/api/trip-brief', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...createPayload(), tripId: '22222222-2222-2222-2222-222222222222' }),
+      }),
+    );
+    const createdB = await createResponseB.json();
+    const briefIdB = createdB.brief.briefId as string;
+
+    await castVote(
+      new Request(`http://localhost:3000/api/trip-brief/${briefIdA}/vote`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          cookie: cookieA,
+        },
+        body: JSON.stringify({ routeId: 'route_a', idempotencyKey: 'shared-key' }),
+      }),
+      briefContext(briefIdA),
+    );
+
+    const secondVoteResponse = await castVote(
+      new Request(`http://localhost:3000/api/trip-brief/${briefIdB}/vote`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          cookie: cookieA,
+        },
+        body: JSON.stringify({ routeId: 'baseline', idempotencyKey: 'shared-key' }),
+      }),
+      briefContext(briefIdB),
+    );
+    expect(secondVoteResponse.status).toBe(200);
+
+    const summaryB = await getTripBriefSummary(
+      new Request(`http://localhost:3000/api/trip-brief/${briefIdB}/summary`),
+      briefContext(briefIdB),
+    );
+    expect(summaryB.status).toBe(200);
+    const summaryBodyB = await summaryB.json();
+    expect(summaryBodyB.voteSummary.totalVotes).toBe(1);
+    expect(summaryBodyB.voteSummary.countsByRouteId.baseline).toBe(1);
+  });
+
   test('allows unlock only within the 5-minute undo window', async () => {
     const now = new Date('2026-04-07T08:45:54.247Z').getTime();
     jest.useFakeTimers();

@@ -21,11 +21,14 @@ export function getVoterTokenFromCookieHeader(cookieHeader: string | null): stri
 }
 
 export function buildVoterTokenSetCookie(value: string): string {
+  const shouldUseSecure = process.env.NODE_ENV === 'production';
+
   return [
     `${TOKEN_COOKIE_NAME}=${encodeURIComponent(value)}`,
     'Path=/',
     'HttpOnly',
     'SameSite=Lax',
+    ...(shouldUseSecure ? ['Secure'] : []),
     `Max-Age=${TOKEN_MAX_AGE_SECONDS}`,
   ].join('; ');
 }

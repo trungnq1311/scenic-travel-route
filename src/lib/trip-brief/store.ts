@@ -115,6 +115,10 @@ function hashToken(token: string): string {
   return createHmac('sha256', getTokenSecret()).update(token).digest('hex');
 }
 
+function scopeIdempotencyKey(briefId: string, idempotencyKey: string): string {
+  return `${briefId}:${idempotencyKey}`;
+}
+
 function ensureRoutesSnapshot(snapshot: unknown): TripBriefRouteSnapshot[] {
   if (!Array.isArray(snapshot)) {
     throw new Error('invalid routes snapshot');
@@ -465,10 +469,10 @@ export async function castTripBriefVote(input: {
             route_id,
             processed_at
           ) VALUES ($1, $2, $3, $4, $5)
-          ON CONFLICT (idempotency_key) DO NOTHING
+          ON CONFLICT DO NOTHING
           RETURNING idempotency_key
         `,
-        [input.idempotencyKey, input.briefId, tokenHash, input.routeId, nowIso()],
+        [scopeIdempotencyKey(input.briefId, input.idempotencyKey), input.briefId, tokenHash, input.routeId, nowIso()],
       );
 
       if (hasRows(mutationInsert.rowCount, mutationInsert.rows.length)) {

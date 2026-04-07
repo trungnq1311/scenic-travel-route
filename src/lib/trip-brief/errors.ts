@@ -7,7 +7,8 @@ export type TripBriefErrorCode =
   | 'unknown_route'
   | 'vote_required'
   | 'forbidden_unlock'
-  | 'invalid_payload';
+  | 'invalid_payload'
+  | 'internal_error';
 
 export interface TripBriefError {
   code: TripBriefErrorCode;
@@ -36,7 +37,7 @@ export function mapStoreError(error: unknown): TripBriefError {
     case 'only locker can unlock':
       return { code: 'forbidden_unlock', error: 'Only the user who locked can unlock during the undo window.', status: 403 };
     default:
-      return { code: 'invalid_payload', error: 'Trip brief request failed.', status: 400 };
+      return { code: 'internal_error', error: 'Trip brief request failed.', status: 500 };
   }
 }
 
