@@ -2,7 +2,7 @@
 
 ## 1.0.1 - 2026-04-07
 
-- Ship V1.1 trip brief share, vote, and lock workflow across API, store, UI, and end-to-end coverage.
-- Harden security and reliability with trip brief token secret enforcement, production cookie security, safer rate-limit fingerprinting, and idempotent event emission.
-- Improve OpenRouter resiliency with retry/backoff and fallback model behavior in extraction and synthesis flows.
+- You can now share trip briefs and run vote + lock workflows end-to-end across API, storage, and UI.
+- Trip-brief security and reliability are stronger with token secret enforcement, production cookie hardening, safer rate-limit fingerprinting, and idempotent event emission.
+- OpenRouter extraction and synthesis are more resilient with retry/backoff behavior and fallback model support.
 - Add repository-compatible `bin/test-lane` entrypoint for automated ship/test workflows.
