@@ -2,6 +2,8 @@
 
 # compiled output
 bin
+!bin/
+!bin/test-lane
 dist
 tmp
 /out-tsc

@@ -39,3 +39,9 @@
 **Depends on:** V1.1 telemetry events in production and initial cohort data collection
 
 ## Completed
+
+### V1.1 Trip Brief Share, Vote, and Lock
+
+**Completed:** v1.0.1 (2026-04-07)
+
+Shipped shareable trip briefs with voter token issuance, idempotent voting and lock APIs, trip-brief UI, storage/migration support, and Jest + Playwright coverage for the end-to-end flow.
