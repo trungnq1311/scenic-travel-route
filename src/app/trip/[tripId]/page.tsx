@@ -8,8 +8,10 @@ import RouteMap from '@/components/RouteMap';
 import RouteSidebar from '@/components/RouteSidebar';
 import BottomSheet from '@/components/BottomSheet';
 import RouteCard from '@/components/RouteCard';
+import TripBriefPanel from '@/components/TripBriefPanel';
 import { getRouteColor } from '@/components/RouteSidebar';
 import type { ProcessedRoute } from '@/lib/pipeline/types';
+import { useTripBriefVote } from '@/hooks/useTripBriefVote';
 
 function TripContent() {
   const params = useParams<{ tripId: string }>();
@@ -50,6 +52,17 @@ function TripContent() {
 
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(null);
 
+  const {
+    tripBrief,
+    state: tripBriefState,
+    errorCode: tripBriefErrorCode,
+    errorMessage: tripBriefErrorMessage,
+    createTripBrief,
+    castVote,
+    lockDecision,
+    unlockDecision,
+  } = useTripBriefVote();
+
   const activeRouteId = selectedRouteId ?? defaultRouteId;
 
   // Sort routes for mobile bottom sheet: scenic by detourRatio ascending, baseline last
@@ -76,6 +89,12 @@ function TripContent() {
   }, [result]);
 
   const scenicCount = result?.routes.filter((r: ProcessedRoute) => !r.isBaseline).length ?? 0;
+
+  useEffect(() => {
+    if (status === 'complete' && result) {
+      void createTripBrief(result);
+    }
+  }, [status, result, createTripBrief]);
 
   return (
     <div className="flex h-screen flex-col bg-stone-50">
@@ -155,6 +174,19 @@ function TripContent() {
               routes={result.routes}
               selectedRouteId={activeRouteId}
               onSelectRoute={setSelectedRouteId}
+              footer={
+                <TripBriefPanel
+                  routes={sortedRoutes}
+                  selectedRouteId={activeRouteId}
+                  tripBrief={tripBrief}
+                  state={tripBriefState}
+                  errorCode={tripBriefErrorCode}
+                  errorMessage={tripBriefErrorMessage}
+                  onVote={castVote}
+                  onLock={lockDecision}
+                  onUnlock={unlockDecision}
+                />
+              }
             />
           </div>
 
@@ -190,6 +222,17 @@ function TripContent() {
                   );
                 })}
               </div>
+              <TripBriefPanel
+                routes={sortedRoutes}
+                selectedRouteId={activeRouteId}
+                tripBrief={tripBrief}
+                state={tripBriefState}
+                errorCode={tripBriefErrorCode}
+                errorMessage={tripBriefErrorMessage}
+                onVote={castVote}
+                onLock={lockDecision}
+                onUnlock={unlockDecision}
+              />
             </BottomSheet>
           </div>
         </div>

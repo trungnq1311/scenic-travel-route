@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, type ReactNode } from 'react';
 import type { ProcessedRoute } from '@/lib/pipeline/types';
 import RouteCard from './RouteCard';
 
@@ -18,6 +18,7 @@ export interface RouteSidebarProps {
   routes: ProcessedRoute[];
   selectedRouteId: string | null;
   onSelectRoute: (id: string) => void;
+  footer?: ReactNode;
 }
 
 export function getRouteColor(
@@ -32,6 +33,7 @@ export default function RouteSidebar({
   routes,
   selectedRouteId,
   onSelectRoute,
+  footer,
 }: RouteSidebarProps) {
   // Sort: scenic routes by detourRatio ascending, baseline always last
   const sortedRoutes = useMemo(() => {
@@ -81,6 +83,8 @@ export default function RouteSidebar({
           );
         })}
       </div>
+
+      {footer}
     </div>
   );
 }

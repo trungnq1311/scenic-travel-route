@@ -13,6 +13,7 @@ Given an origin and destination, the app:
 
 - Alpha V1.0
 - Core pipeline and map UI are implemented
+- Trip brief share, vote, and lock workflow shipped in `v1.0.1`
 - Recovery completed after repository loss (docs/config/scripts/tests restored)
 
 ## Product Constraints (Do Not Regress)
@@ -46,9 +47,16 @@ Required:
 - `MAPBOX_API_KEY`
 - `NEXT_PUBLIC_MAPBOX_TOKEN`
 
+Required for trip-brief persistence:
+- `DATABASE_URL`
+- `TRIP_BRIEF_TOKEN_SECRET`
+
 Optional:
 - `LLM_MODEL` (default `qwen/qwen3.6-plus:free`)
 - `LLM_TIMEOUT_MS` (default `180000`)
+- `OPENROUTER_MAX_RETRIES` (default `3`)
+- `OPENROUTER_RETRY_BASE_MS` (default `1500`)
+- `LLM_FALLBACK_MODELS` (optional comma-separated models tried after `LLM_MODEL`)
 - `SOURCE_TIMEOUT_MS`
 - `MAX_PIPELINE_TIME_MS`
 
@@ -66,7 +74,16 @@ App URL: `http://localhost:3000`
 ```bash
 npm run build
 npm test -- --no-coverage
+npm run test:e2e
 bash scripts/smoke-test.sh
+```
+
+## Database Migration (Trip Brief)
+
+Run trip-brief schema migration before enabling persistent share/vote flows:
+
+```bash
+npm run db:migrate:trip-brief
 ```
 
 Note: Jest may report an open-handles warning in this setup; it is known and non-blocking.
@@ -83,6 +100,8 @@ Note: Jest may report an open-handles warning in this setup; it is known and non
    - fetch route geometries (`src/lib/geo/route.ts`)
    - fetch POIs (`src/lib/geo/pois.ts`)
    - synthesize vibes (`src/lib/llm/synthesize.ts`)
+5. `/trip/[tripId]` can create a shareable trip brief and redirect users to `/trip-brief/[briefId]`.
+6. Trip brief APIs handle summary, voting, and lock flow under `/api/trip-brief/*`.
 
 ## Important Implementation Notes
 
@@ -105,6 +124,19 @@ Note: Jest may report an open-handles warning in this setup; it is known and non
 - `src/lib/geo/geocode.ts`
 - `src/lib/geo/route.ts`
 - `src/components/ProgressStepper.tsx`
+- `src/app/trip-brief/[briefId]/page.tsx`
+- `src/app/api/trip-brief/route.ts`
+- `src/app/api/trip-brief/[briefId]/vote/route.ts`
+- `src/app/api/trip-brief/[briefId]/lock/route.ts`
+- `src/components/TripBriefPanel.tsx`
+- `src/lib/trip-brief/store.ts`
+
+## Documentation
+
+- `README.md` - quick start, architecture overview, and key paths
+- `CLAUDE.md` - repository operating guide and implementation constraints
+- `CHANGELOG.md` - release-by-release shipped changes
+- `TODOS.md` - active product backlog and completed items
 
 ## Backlog
 

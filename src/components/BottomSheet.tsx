@@ -44,7 +44,7 @@ function findNearestSnap(
 }
 
 export default function BottomSheet({ children }: BottomSheetProps) {
-  const [snap, setSnap] = useState<SnapState>('collapsed');
+  const [snap, setSnap] = useState<SnapState>('half');
   const [isDragging, setIsDragging] = useState(false);
   const [dragHeight, setDragHeight] = useState<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -95,6 +95,33 @@ export default function BottomSheet({ children }: BottomSheetProps) {
     setDragHeight(null);
   }, [isDragging, dragHeight, snap, getContainerHeight]);
 
+  const cycleSnap = useCallback(() => {
+    setSnap((prev) => {
+      if (prev === 'collapsed') return 'half';
+      if (prev === 'half') return 'full';
+      return 'collapsed';
+    });
+  }, []);
+
+  const handleHandleKeyDown = useCallback((e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      cycleSnap();
+      return;
+    }
+
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setSnap((prev) => (prev === 'collapsed' ? 'half' : 'full'));
+      return;
+    }
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setSnap((prev) => (prev === 'full' ? 'half' : 'collapsed'));
+    }
+  }, [cycleSnap]);
+
   return (
     <div
       ref={containerRef}
@@ -102,19 +129,22 @@ export default function BottomSheet({ children }: BottomSheetProps) {
       style={{
         height: currentHeight,
         transition: isDragging ? 'none' : 'height 300ms cubic-bezier(0.4, 0, 0.2, 1)',
-        touchAction: 'none',
       }}
     >
       {/* Drag handle */}
-      <div
-        className="flex shrink-0 cursor-grab items-center justify-center py-3 active:cursor-grabbing"
+      <button
+        type="button"
+        aria-label="Adjust bottom sheet height"
+        className="flex w-full shrink-0 cursor-grab items-center justify-center py-3 active:cursor-grabbing"
+        style={{ touchAction: 'none' }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
+        onKeyDown={handleHandleKeyDown}
       >
         <div className="h-1 w-10 rounded-full bg-stone-400" />
-      </div>
+      </button>
 
       {/* Scrollable content */}
       <div className="flex-1 overflow-y-auto px-4 pb-4">

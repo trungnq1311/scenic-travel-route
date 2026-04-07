@@ -1,7 +1,12 @@
+import { createHash } from 'crypto';
+
 interface RateLimitEntry {
   count: number;
   resetAt: number;
 }
+
+const IPV4_WITH_OPTIONAL_PORT = /^((?:\d{1,3}\.){3}\d{1,3})(?::\d+)?$/;
+const IPV6_WITH_OPTIONAL_BRACKETS = /^\[?([A-Fa-f0-9:]+)\]?$/;
 
 interface RateLimitConfig {
   key: string;
@@ -18,6 +23,10 @@ export interface RateLimitResult {
 
 const store = new Map<string, RateLimitEntry>();
 
+export function resetRateLimitStore(): void {
+  store.clear();
+}
+
 function pruneExpired(now: number): void {
   for (const [key, entry] of store.entries()) {
     if (entry.resetAt <= now) {
@@ -26,18 +35,64 @@ function pruneExpired(now: number): void {
   }
 }
 
+function normalizeIp(input: string): string | null {
+  const value = input.trim();
+  if (!value) {
+    return null;
+  }
+
+  const ipv4Match = value.match(IPV4_WITH_OPTIONAL_PORT);
+  if (ipv4Match?.[1]) {
+    return ipv4Match[1];
+  }
+
+  const ipv6Match = value.match(IPV6_WITH_OPTIONAL_BRACKETS);
+  if (ipv6Match?.[1] && ipv6Match[1].includes(':')) {
+    return ipv6Match[1].toLowerCase();
+  }
+
+  return null;
+}
+
+function fromHeader(request: Request, headerName: string): string | null {
+  const raw = request.headers.get(headerName);
+  if (!raw) {
+    return null;
+  }
+
+  const firstValue = raw.split(',')[0];
+  return normalizeIp(firstValue);
+}
+
+function buildClientFingerprint(request: Request): string {
+  const fingerprintSeed = [
+    request.headers.get('user-agent')?.trim() ?? '',
+    request.headers.get('accept-language')?.trim() ?? '',
+    request.headers.get('sec-ch-ua')?.trim() ?? '',
+    request.headers.get('sec-ch-ua-platform')?.trim() ?? '',
+  ].join('|');
+
+  if (!fingerprintSeed.replace(/\|/g, '')) {
+    return 'fingerprint:anonymous';
+  }
+
+  const digest = createHash('sha256').update(fingerprintSeed).digest('hex').slice(0, 16);
+  return `fingerprint:${digest}`;
+}
+
 export function extractClientIp(request: Request): string {
-  const forwardedFor = request.headers.get('x-forwarded-for');
-  if (forwardedFor) {
-    return forwardedFor.split(',')[0].trim();
+  if (process.env.TRUST_PROXY_HEADERS !== 'true') {
+    return buildClientFingerprint(request);
   }
 
-  const realIp = request.headers.get('x-real-ip');
-  if (realIp) {
-    return realIp.trim();
-  }
+  const trustedHeaderIp =
+    fromHeader(request, 'cf-connecting-ip') ||
+    fromHeader(request, 'x-real-ip') ||
+    fromHeader(request, 'x-vercel-forwarded-for');
 
-  return 'unknown';
+  if (trustedHeaderIp) return trustedHeaderIp;
+
+  return buildClientFingerprint(request);
 }
 
 export function checkRateLimit(config: RateLimitConfig): RateLimitResult {
