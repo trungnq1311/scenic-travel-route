@@ -3,6 +3,9 @@ interface RateLimitEntry {
   resetAt: number;
 }
 
+const IPV4_WITH_OPTIONAL_PORT = /^((?:\d{1,3}\.){3}\d{1,3})(?::\d+)?$/;
+const IPV6_WITH_OPTIONAL_BRACKETS = /^\[?([A-Fa-f0-9:]+)\]?$/;
+
 interface RateLimitConfig {
   key: string;
   maxRequests: number;
@@ -26,16 +29,46 @@ function pruneExpired(now: number): void {
   }
 }
 
-export function extractClientIp(request: Request): string {
-  const forwardedFor = request.headers.get('x-forwarded-for');
-  if (forwardedFor) {
-    return forwardedFor.split(',')[0].trim();
+function normalizeIp(input: string): string | null {
+  const value = input.trim();
+  if (!value) {
+    return null;
   }
 
-  const realIp = request.headers.get('x-real-ip');
-  if (realIp) {
-    return realIp.trim();
+  const ipv4Match = value.match(IPV4_WITH_OPTIONAL_PORT);
+  if (ipv4Match?.[1]) {
+    return ipv4Match[1];
   }
+
+  const ipv6Match = value.match(IPV6_WITH_OPTIONAL_BRACKETS);
+  if (ipv6Match?.[1] && ipv6Match[1].includes(':')) {
+    return ipv6Match[1].toLowerCase();
+  }
+
+  return null;
+}
+
+function fromHeader(request: Request, headerName: string): string | null {
+  const raw = request.headers.get(headerName);
+  if (!raw) {
+    return null;
+  }
+
+  const firstValue = raw.split(',')[0];
+  return normalizeIp(firstValue);
+}
+
+export function extractClientIp(request: Request): string {
+  if (process.env.TRUST_PROXY_HEADERS !== 'true') {
+    return 'unknown';
+  }
+
+  const trustedHeaderIp =
+    fromHeader(request, 'cf-connecting-ip') ||
+    fromHeader(request, 'x-real-ip') ||
+    fromHeader(request, 'x-vercel-forwarded-for');
+
+  if (trustedHeaderIp) return trustedHeaderIp;
 
   return 'unknown';
 }

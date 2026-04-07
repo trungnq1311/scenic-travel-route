@@ -44,7 +44,7 @@ function findNearestSnap(
 }
 
 export default function BottomSheet({ children }: BottomSheetProps) {
-  const [snap, setSnap] = useState<SnapState>('collapsed');
+  const [snap, setSnap] = useState<SnapState>('half');
   const [isDragging, setIsDragging] = useState(false);
   const [dragHeight, setDragHeight] = useState<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);

@@ -46,9 +46,16 @@ Required:
 - `MAPBOX_API_KEY`
 - `NEXT_PUBLIC_MAPBOX_TOKEN`
 
+Required for trip-brief persistence:
+- `DATABASE_URL`
+- `TRIP_BRIEF_TOKEN_SECRET`
+
 Optional:
 - `LLM_MODEL` (default `qwen/qwen3.6-plus:free`)
 - `LLM_TIMEOUT_MS` (default `180000`)
+- `OPENROUTER_MAX_RETRIES` (default `3`)
+- `OPENROUTER_RETRY_BASE_MS` (default `1500`)
+- `LLM_FALLBACK_MODELS` (optional comma-separated models tried after `LLM_MODEL`)
 - `SOURCE_TIMEOUT_MS`
 - `MAX_PIPELINE_TIME_MS`
 
@@ -67,6 +74,14 @@ App URL: `http://localhost:3000`
 npm run build
 npm test -- --no-coverage
 bash scripts/smoke-test.sh
+```
+
+## Database Migration (Trip Brief)
+
+Run trip-brief schema migration before enabling persistent share/vote flows:
+
+```bash
+npm run db:migrate:trip-brief
 ```
 
 Note: Jest may report an open-handles warning in this setup; it is known and non-blocking.

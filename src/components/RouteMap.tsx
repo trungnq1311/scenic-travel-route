@@ -46,6 +46,10 @@ export default function RouteMap({
   selectedRouteId,
   onSelectRoute,
 }: RouteMapProps) {
+  if (process.env.NEXT_PUBLIC_E2E_DISABLE_MAP === 'true') {
+    return <div className="h-full w-full bg-stone-100" data-testid="route-map-placeholder" />;
+  }
+
   const mapRef = useRef<MapRef>(null);
 
   // Build a scenic-index lookup: non-baseline routes get incrementing indices
