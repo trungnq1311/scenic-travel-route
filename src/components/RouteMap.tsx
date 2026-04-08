@@ -6,14 +6,24 @@ import { LngLatBounds, MapMouseEvent } from 'mapbox-gl';
 import type { LayerProps } from 'react-map-gl/mapbox';
 import type { ProcessedRoute } from '@/lib/pipeline/types';
 import POIMarkers from './POIMarkers';
+import PhotoMarkers from './PhotoMarkers';
 
-/** Scenic route colors assigned by index */
+/** Scenic route colors assigned by index — gradient start colors */
 const SCENIC_COLORS = [
-  '#3b82f6', // blue
-  '#f97316', // orange
-  '#8b5cf6', // purple
-  '#10b981', // green
-  '#14b8a6', // teal
+  '#F5A623', // amber (scenic)
+  '#1A7F7F', // teal
+  '#E86B5D', // coral
+  '#7BA05B', // sage
+  '#6BAED6', // sky
+];
+
+/** Gradient end colors for routes */
+const SCENIC_COLORS_END = [
+  '#D4900A', // amber dark
+  '#2AA3A3', // teal light
+  '#C45545', // coral dark
+  '#5D8040', // sage dark
+  '#4A9BB8', // sky dark
 ];
 
 const BASELINE_COLOR = '#9ca3af';
@@ -22,6 +32,8 @@ export interface RouteMapProps {
   routes: ProcessedRoute[];
   selectedRouteId: string | null;
   onSelectRoute: (id: string) => void;
+  photosVisible?: boolean;
+  onPhotosVisibleChange?: (visible: boolean) => void;
 }
 
 function getLayerId(route: ProcessedRoute): string {
@@ -41,10 +53,16 @@ function getRouteColor(route: ProcessedRoute, scenicIndex: number): string {
   return SCENIC_COLORS[scenicIndex % SCENIC_COLORS.length];
 }
 
+function getRouteColorEnd(route: ProcessedRoute, scenicIndex: number): string {
+  if (route.isBaseline) return BASELINE_COLOR;
+  return SCENIC_COLORS_END[scenicIndex % SCENIC_COLORS_END.length];
+}
+
 export default function RouteMap({
   routes,
   selectedRouteId,
   onSelectRoute,
+  photosVisible = true,
 }: RouteMapProps) {
   if (process.env.NEXT_PUBLIC_E2E_DISABLE_MAP === 'true') {
     return <div className="h-full w-full bg-stone-100" data-testid="route-map-placeholder" />;
@@ -186,9 +204,9 @@ export default function RouteMap({
           type: 'line',
           paint: {
             'line-color': color,
-            'line-width': 12,
-            'line-opacity': 0.25,
-            'line-blur': 4,
+            'line-width': 16,
+            'line-opacity': 0.35,
+            'line-blur': 6,
           },
           layout: {
             'line-cap': 'round',
@@ -216,6 +234,12 @@ export default function RouteMap({
       <POIMarkers
         pois={selectedRoute?.pois ?? []}
         visible={selectedRoute != null && !selectedRoute.isBaseline}
+      />
+
+      {/* Scenic photo markers for selected non-baseline route */}
+      <PhotoMarkers
+        pois={selectedRoute?.pois ?? []}
+        visible={photosVisible && selectedRoute != null && !selectedRoute.isBaseline}
       />
     </Map>
   );

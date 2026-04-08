@@ -33,6 +33,10 @@ function TripContent() {
   // Interstitial: show "Found N scenic routes!" for 1.5s before revealing map
   const [showResults, setShowResults] = useState(false);
 
+  // Map overlay controls
+  const [photosVisible, setPhotosVisible] = useState(true);
+  const [mapFocused, setMapFocused] = useState(false);
+
   useEffect(() => {
     if (status === 'complete' && result) {
       const timer = setTimeout(() => {
@@ -145,7 +149,7 @@ function TripContent() {
             className="flex flex-col items-center gap-3"
             style={{ animation: 'fadeInUp 0.5s ease-out' }}
           >
-            <svg className="h-12 w-12 text-emerald-500" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            <svg className="h-12 w-12 text-teal-600" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
             <h2 className="text-xl font-semibold text-stone-800">
@@ -191,12 +195,48 @@ function TripContent() {
           </div>
 
           {/* Map */}
-          <div className="flex-1">
+          <div className="relative flex-1">
             <RouteMap
               routes={result.routes}
               selectedRouteId={activeRouteId}
               onSelectRoute={setSelectedRouteId}
+              photosVisible={photosVisible}
             />
+
+            {/* Map Overlay Controls */}
+            <div className={`absolute top-4 right-4 flex flex-col gap-2 transition-opacity duration-300 ${mapFocused ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+              <button
+                onClick={() => setPhotosVisible(!photosVisible)}
+                className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium shadow-sm transition-all ${
+                  photosVisible
+                    ? 'border-teal-300 bg-white text-teal-700 hover:bg-teal-50'
+                    : 'border-stone-300 bg-white text-stone-500 hover:bg-stone-50'
+                }`}
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="m21 15-5-5L5 21" />
+                </svg>
+                <span className="hidden sm:inline">Photos</span>
+              </button>
+              <button
+                onClick={() => setMapFocused(!mapFocused)}
+                className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium shadow-sm transition-all ${
+                  mapFocused
+                    ? 'border-teal-300 bg-white text-teal-700 hover:bg-teal-50'
+                    : 'border-stone-300 bg-white text-stone-500 hover:bg-stone-50'
+                }`}
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                  <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                  <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                  <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+                </svg>
+                <span className="hidden sm:inline">Focus</span>
+              </button>
+            </div>
           </div>
 
           {/* Mobile bottom sheet */}
