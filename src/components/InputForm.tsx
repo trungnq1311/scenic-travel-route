@@ -56,7 +56,7 @@ export default function InputForm() {
   }
 
   const inputClasses =
-    'w-full rounded-lg border border-stone-300 px-4 py-3 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors';
+    'w-full rounded-lg border border-stone-300 px-4 py-3 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors';
 
   const chillOptions: { value: ChillLevel; label: string }[] = [
     { value: 'low', label: 'Low' },
@@ -134,7 +134,7 @@ export default function InputForm() {
                   onClick={() => toggleChill(opt.value)}
                   className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
                     chillLevel === opt.value
-                      ? 'bg-emerald-600 text-white'
+                      ? 'bg-amber-500 text-white'
                       : 'bg-stone-200 text-stone-700 hover:bg-stone-300'
                   }`}
                 >
@@ -155,7 +155,7 @@ export default function InputForm() {
                   onClick={() => toggleVibe(opt.value)}
                   className={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
                     vibes.has(opt.value)
-                      ? 'bg-emerald-600 text-white'
+                      ? 'bg-amber-500 text-white'
                       : 'bg-stone-200 text-stone-700 hover:bg-stone-300'
                   }`}
                 >
@@ -171,11 +171,11 @@ export default function InputForm() {
       <button
         type="submit"
         disabled={!canSubmit || isSubmitting}
-        className={`w-full rounded-lg py-3 font-semibold transition-colors ${
+        className={`w-full rounded-lg py-3 font-semibold transition-all ${
           isSubmitting
-            ? 'cursor-wait bg-emerald-500 text-white'
+            ? 'cursor-wait bg-amber-400 text-white'
             : canSubmit
-              ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+              ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg hover:shadow-xl hover:-translate-y-0.5'
               : 'cursor-not-allowed bg-stone-300 text-stone-500'
         }`}
       >
