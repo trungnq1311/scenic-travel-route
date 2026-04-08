@@ -5,7 +5,6 @@
 AI-powered scenic road-trip planner that turns any A-to-B drive into a scenic journey. Given an origin and destination, the system gathers travel content from multiple external sources (YouTube, TikTok, web search, Google Reviews), uses an LLM to extract route variants and waypoints, geocodes waypoints, fetches drivable geometries, discovers POIs, and synthesizes vibe summaries for map-first route comparison.
 
 Current status: Alpha V1.0. Core route pipeline and map UI are implemented and working.
-Trip brief share, vote, and lock workflow shipped in `v1.0.1`.
 
 ## Product Decisions (Do Not Regress)
 
@@ -37,15 +36,10 @@ Required keys:
 - `ENSEMBLE_DATA_API_KEY`
 - `MAPBOX_API_KEY`
 - `NEXT_PUBLIC_MAPBOX_TOKEN`
-- `DATABASE_URL`
-- `TRIP_BRIEF_TOKEN_SECRET`
 
 Optional tuning:
 - `LLM_MODEL` (default `qwen/qwen3.6-plus:free`)
 - `LLM_TIMEOUT_MS` (default 180000)
-- `OPENROUTER_MAX_RETRIES` (default 3)
-- `OPENROUTER_RETRY_BASE_MS` (default 1500)
-- `LLM_FALLBACK_MODELS` (optional comma-separated fallback model list)
 - `SOURCE_TIMEOUT_MS`
 - `MAX_PIPELINE_TIME_MS`
 
@@ -61,7 +55,6 @@ npm run dev
 ```bash
 npm run build
 npm test -- --no-coverage
-npm run test:e2e
 bash scripts/smoke-test.sh
 ```
 
@@ -81,7 +74,6 @@ Notes:
    - fetch POIs
    - synthesize vibes
 5. Results render as selectable polylines + cards + POI markers.
-6. Trip results can be turned into shareable trip briefs with voting and lock state.
 
 ## Important Implementation Details
 
@@ -120,15 +112,8 @@ In `src/lib/sources/tiktok.ts`:
 - `src/app/trip/[tripId]/page.tsx`
 - `src/app/api/generate/route.ts`
 - `src/app/api/generate/stream/route.ts`
-- `src/app/api/trip-brief/route.ts`
-- `src/app/api/trip-brief/[briefId]/summary/route.ts`
-- `src/app/api/trip-brief/[briefId]/vote/route.ts`
-- `src/app/api/trip-brief/[briefId]/lock/route.ts`
-- `src/app/trip-brief/[briefId]/page.tsx`
 - `src/hooks/useRouteGeneration.ts`
-- `src/hooks/useTripBriefVote.ts`
 - `src/lib/pipeline/generate.ts`
-- `src/lib/trip-brief/store.ts`
 - `src/lib/sources/gather.ts`
 - `src/lib/sources/tiktok.ts`
 - `src/lib/sources/youtube.ts`
