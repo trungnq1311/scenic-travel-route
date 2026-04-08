@@ -3,6 +3,7 @@
 AI-powered scenic road-trip planner that turns any A-to-B drive into a scenic journey.
 
 Given an origin and destination, the app:
+
 - gathers route-relevant travel content from multiple external sources,
 - extracts route variants and waypoints with an LLM,
 - geocodes waypoints and fetches drivable route geometries,
@@ -21,7 +22,7 @@ Given an origin and destination, the app:
 1. No manual curation. Data must come from external sources/APIs.
 2. Source priority: Community > YouTube > TikTok > Web search = Google Reviews.
 3. TikTok is mandatory in the pipeline.
-4. Default LLM: `qwen/qwen3.6-plus:free` via OpenRouter free tier.
+4. Default LLM: `qwen/qwen3-next-80b-a3b-instruct:free` via OpenRouter free tier.
 5. OpenRouter payload must include `chat_template_kwargs: { enable_thinking: false }`.
 6. Default detour behavior: no cap. Optional chill-level caps: low=1.5x, medium=2.0x, high=3.0x.
 7. UI pattern: map-first (desktop sidebar + mobile bottom sheet).
@@ -40,6 +41,7 @@ Given an origin and destination, the app:
 Create `.env.local` from `.env.example`.
 
 Required:
+
 - `OPENROUTER_API_KEY`
 - `TAVILY_API_KEY`
 - `GOOGLE_API_KEY`
@@ -48,11 +50,13 @@ Required:
 - `NEXT_PUBLIC_MAPBOX_TOKEN`
 
 Required for trip-brief persistence:
+
 - `DATABASE_URL`
 - `TRIP_BRIEF_TOKEN_SECRET`
 
 Optional:
-- `LLM_MODEL` (default `qwen/qwen3.6-plus:free`)
+
+- `LLM_MODEL` (default `qwen/qwen3-next-80b-a3b-instruct:free`)
 - `LLM_TIMEOUT_MS` (default `180000`)
 - `OPENROUTER_MAX_RETRIES` (default `3`)
 - `OPENROUTER_RETRY_BASE_MS` (default `1500`)

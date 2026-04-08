@@ -11,7 +11,7 @@ function sleep(ms: number): Promise<void> {
 }
 
 function getModelCandidates(): string[] {
-  const primaryModel = process.env.LLM_MODEL || 'qwen/qwen3.6-plus:free';
+  const primaryModel = process.env.LLM_MODEL || 'qwen/qwen3-next-80b-a3b-instruct:free';
   const fallbackModels = (process.env.LLM_FALLBACK_MODELS || '')
     .split(',')
     .map((value) => value.trim())

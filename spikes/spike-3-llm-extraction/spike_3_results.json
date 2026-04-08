@@ -9,12 +9,12 @@
   ],
   "total_source_items": 112,
   "overall_pass": true,
-  "best_model": "Qwen 3.6 Plus",
+  "best_model": "Qwen 3 Next 80B A3B Instruct",
   "best_accuracy_pct": 95.5,
   "model_results": [
     {
-      "model": "Qwen 3.6 Plus",
-      "model_id": "qwen/qwen3.6-plus:free",
+      "model": "Qwen 3 Next 80B A3B Instruct",
+      "model_id": "qwen/qwen3-next-80b-a3b-instruct:free",
       "success": true,
       "elapsed_seconds": 179.4,
       "passed": true,

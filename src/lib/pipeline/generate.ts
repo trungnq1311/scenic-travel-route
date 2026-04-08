@@ -227,7 +227,7 @@ export async function generateRoutes(
       totalElapsedMs: Date.now() - pipelineStart,
       stages,
       sourcesUsed,
-      llmModel: process.env.LLM_MODEL || 'qwen/qwen3.6-plus:free',
+      llmModel: process.env.LLM_MODEL || 'qwen/qwen3-next-80b-a3b-instruct:free',
       detourCap: {
         chillLevel,
         maxDurationRatio: maxRatio,
