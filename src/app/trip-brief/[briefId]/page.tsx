@@ -204,7 +204,7 @@ export default function TripBriefPage() {
             <button
               type="button"
               onClick={() => router.push('/')}
-              className="rounded-lg bg-emerald-600 px-3 py-2 text-sm font-semibold text-white"
+              className="rounded-lg bg-amber-500 px-3 py-2 text-sm font-semibold text-white hover:bg-amber-600"
             >
               Go to home
             </button>

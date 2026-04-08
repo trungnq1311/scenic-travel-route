@@ -57,7 +57,7 @@ function RouteVoteRow({
       onClick={onVote}
       aria-label={`Vote for ${route.name}`}
       className={`flex w-full items-center justify-between rounded-lg border px-3 py-2 text-left transition-colors ${
-        selected ? 'border-emerald-500 bg-emerald-50' : 'border-stone-200 bg-white hover:border-stone-300'
+        selected ? 'border-teal-500 bg-teal-50' : 'border-stone-200 bg-white hover:border-stone-300'
       } ${disabled ? 'cursor-not-allowed opacity-70' : ''}`}
     >
       <div className="min-w-0">
@@ -123,7 +123,7 @@ export default function TripBriefPanel({
       )}
 
       {state === 'decision_locked' && winnerRouteId && (
-        <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-xs text-emerald-800">
+        <div className="mt-3 rounded-lg border border-teal-200 bg-teal-50 px-3 py-2 text-xs text-teal-800">
           Decision locked. {winnerRouteId} wins.
         </div>
       )}
@@ -152,7 +152,7 @@ export default function TripBriefPanel({
           type="button"
           onClick={onLock}
           disabled={!canLock || state === 'submitting_vote'}
-          className="inline-flex min-h-11 items-center justify-center rounded-lg bg-emerald-600 px-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:bg-stone-300"
+          className="inline-flex min-h-11 items-center justify-center rounded-lg bg-amber-500 px-3 text-sm font-semibold text-white hover:bg-amber-600 disabled:cursor-not-allowed disabled:bg-stone-300"
           aria-label="Lock decision"
         >
           Lock decision
