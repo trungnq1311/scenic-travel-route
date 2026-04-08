@@ -67,7 +67,7 @@ const STUB_GENERATE_RESPONSE = {
       { name: 'synthesize', status: 'success', elapsedMs: 100 },
     ],
     sourcesUsed: ['youtube', 'tiktok'],
-    llmModel: 'qwen/qwen3-next-80b-a3b-instruct:free',
+    llmModel: 'openai/gpt-oss-120b:free',
     detourCap: {
       chillLevel: 'none',
       maxDurationRatio: Number.MAX_SAFE_INTEGER,
@@ -164,7 +164,7 @@ test('share -> vote -> lock happy path', async ({ page }) => {
               totalElapsedMs: 1500,
               stages: [],
               sourcesUsed: ['youtube', 'tiktok'],
-              llmModel: 'qwen/qwen3-next-80b-a3b-instruct:free',
+              llmModel: 'openai/gpt-oss-120b:free',
               detourCap: {
                 chillLevel: 'none',
                 maxDurationRatio: Number.MAX_SAFE_INTEGER,

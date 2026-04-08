@@ -17,19 +17,28 @@ export interface VibeSummary {
 const RETRYABLE_STATUS_CODES = new Set([429, 500, 502, 503, 504]);
 const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_RETRY_BASE_MS = 1500;
+const DEFAULT_FALLBACK_MODELS = [
+  "stepfun/step-3.5-flash:free",
+  "meta-llama/llama-3.3-70b-instruct:free",
+];
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function getModelCandidates(): string[] {
-  const primaryModel = process.env.LLM_MODEL || "qwen/qwen3-next-80b-a3b-instruct:free";
-  const fallbackModels = (process.env.LLM_FALLBACK_MODELS || "")
+  const primaryModel = process.env.LLM_MODEL || "openai/gpt-oss-120b:free";
+  const fallbackSource =
+    process.env.LLM_FALLBACK_MODELS === undefined
+      ? DEFAULT_FALLBACK_MODELS.join(",")
+      : process.env.LLM_FALLBACK_MODELS;
+
+  const fallbackModels = fallbackSource
     .split(",")
     .map((value) => value.trim())
     .filter((value) => value.length > 0 && value !== primaryModel);
 
-  return [primaryModel, ...fallbackModels];
+  return [primaryModel, ...new Set(fallbackModels)];
 }
 
 function parseRetryAfterMs(retryAfterHeader: string | null): number | null {

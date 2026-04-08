@@ -94,4 +94,54 @@ describe('synthesizeVibes', () => {
     expect(secondCallBody.model).toBe('fallback/model');
     expect(result).toEqual([{ routeId: 'r1', vibeSummary: 'Fresh ocean-breeze drive' }]);
   });
+
+  test('uses built-in fallback models when LLM_FALLBACK_MODELS is unset', async () => {
+    process.env.OPENROUTER_API_KEY = 'or-key';
+    process.env.LLM_MODEL = 'primary/model';
+    delete process.env.LLM_FALLBACK_MODELS;
+
+    const fetchMock = jest
+      .fn()
+      .mockResolvedValueOnce({
+        ok: false,
+        status: 429,
+        headers: { get: () => null },
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({
+          choices: [
+            {
+              message: {
+                content: JSON.stringify([
+                  { routeId: 'r1', vibeSummary: 'Default fallback summary' },
+                ]),
+              },
+            },
+          ],
+        }),
+      });
+
+    global.fetch = fetchMock as unknown as typeof fetch;
+
+    const result = await synthesizeVibes([
+      {
+        id: 'r1',
+        name: 'Route 1',
+        description: 'Fallback description',
+        primaryRoad: 'QL51',
+        distanceKm: 100,
+        durationMinutes: 120,
+        scenicSegments: [],
+        pois: [],
+      },
+    ]);
+
+    const firstCallBody = JSON.parse(fetchMock.mock.calls[0]?.[1]?.body as string);
+    const secondCallBody = JSON.parse(fetchMock.mock.calls[1]?.[1]?.body as string);
+
+    expect(firstCallBody.model).toBe('primary/model');
+    expect(secondCallBody.model).toBe('stepfun/step-3.5-flash:free');
+    expect(result).toEqual([{ routeId: 'r1', vibeSummary: 'Default fallback summary' }]);
+  });
 });

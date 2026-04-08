@@ -49,7 +49,7 @@ function createPayload() {
       totalElapsedMs: 1000,
       stages: [],
       sourcesUsed: ['youtube', 'tiktok'],
-      llmModel: 'qwen/qwen3-next-80b-a3b-instruct:free',
+      llmModel: 'openai/gpt-oss-120b:free',
       detourCap: {
         chillLevel: 'none',
         maxDurationRatio: Infinity,

@@ -22,7 +22,7 @@ Given an origin and destination, the app:
 1. No manual curation. Data must come from external sources/APIs.
 2. Source priority: Community > YouTube > TikTok > Web search = Google Reviews.
 3. TikTok is mandatory in the pipeline.
-4. Default LLM: `qwen/qwen3-next-80b-a3b-instruct:free` via OpenRouter free tier.
+4. Default LLM: `openai/gpt-oss-120b:free` via OpenRouter free tier.
 5. OpenRouter payload must include `chat_template_kwargs: { enable_thinking: false }`.
 6. Default detour behavior: no cap. Optional chill-level caps: low=1.5x, medium=2.0x, high=3.0x.
 7. UI pattern: map-first (desktop sidebar + mobile bottom sheet).
@@ -56,11 +56,11 @@ Required for trip-brief persistence:
 
 Optional:
 
-- `LLM_MODEL` (default `qwen/qwen3-next-80b-a3b-instruct:free`)
+- `LLM_MODEL` (default `openai/gpt-oss-120b:free`)
 - `LLM_TIMEOUT_MS` (default `180000`)
 - `OPENROUTER_MAX_RETRIES` (default `3`)
 - `OPENROUTER_RETRY_BASE_MS` (default `1500`)
-- `LLM_FALLBACK_MODELS` (optional comma-separated models tried after `LLM_MODEL`)
+- `LLM_FALLBACK_MODELS` (optional comma-separated models tried after `LLM_MODEL`; if unset, defaults to `stepfun/step-3.5-flash:free,meta-llama/llama-3.3-70b-instruct:free`; set empty to disable)
 - `SOURCE_TIMEOUT_MS`
 - `MAX_PIPELINE_TIME_MS`
 

@@ -101,4 +101,46 @@ describe('extractRouteData', () => {
     expect(secondCallBody.model).toBe('fallback/model');
     expect(result.corridor).toBe('fallback corridor');
   });
+
+  test('uses built-in fallback models when LLM_FALLBACK_MODELS is unset', async () => {
+    process.env.LLM_MODEL = 'primary/model';
+    delete process.env.LLM_FALLBACK_MODELS;
+
+    const successResponse = {
+      choices: [
+        {
+          message: {
+            content: JSON.stringify({
+              corridor: 'default fallback corridor',
+              routes: [],
+            }),
+          },
+        },
+      ],
+    };
+
+    const fetchMock = jest
+      .fn()
+      .mockResolvedValueOnce({
+        ok: false,
+        status: 429,
+        headers: { get: () => null },
+        text: async () => 'rate limit',
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => successResponse,
+      });
+
+    global.fetch = fetchMock as unknown as typeof fetch;
+
+    const result = await extractRouteData([], 'HCM', 'Vung Tau');
+
+    const firstCallBody = JSON.parse(fetchMock.mock.calls[0]?.[1]?.body as string);
+    const secondCallBody = JSON.parse(fetchMock.mock.calls[1]?.[1]?.body as string);
+
+    expect(firstCallBody.model).toBe('primary/model');
+    expect(secondCallBody.model).toBe('stepfun/step-3.5-flash:free');
+    expect(result.corridor).toBe('default fallback corridor');
+  });
 });
